@@ -1,14 +1,27 @@
-body, html, #root {
+:root {
+  --space-black: #050508;
+  --deep-purple: #1a1a2e;
+}
+
+/* Global layout + background */
+html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background: #1b0b3b; /* deep purple */
   overflow-x: hidden;
   font-family: sans-serif;
   position: relative;
+
+  /* Space background */
+  background: radial-gradient(
+    circle at center,
+    var(--deep-purple) 0%,
+    var(--space-black) 100%
+  );
 }
 
+/* Star layer */
 .stars {
   position: fixed;
   top: 0;
@@ -20,6 +33,7 @@ body, html, #root {
   z-index: 0;
 }
 
+/* Individual stars */
 .star {
   position: absolute;
   background: white;
@@ -28,6 +42,7 @@ body, html, #root {
   animation: twinkle 2s infinite alternate;
 }
 
+/* Twinkle animation */
 @keyframes twinkle {
   from { opacity: 0.3; }
   to { opacity: 1; }
