@@ -6,7 +6,7 @@ const en = {
     translate: "Translate",
   },
   site: {
-    name: "Your Name",
+    name: "Mika.dev",
   },
 
   // About Me section 

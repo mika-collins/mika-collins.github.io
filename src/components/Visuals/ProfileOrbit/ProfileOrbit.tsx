@@ -13,7 +13,7 @@ const ProfileOrbit = () => {
 
         {/* Profile image */}
         <div className="orbit-center">
-          <img src="/photo.jpg" alt="Profile" />
+          <img src="/portrait.jpg" alt="Profile" />
         </div>
 
         {/* Rotating orbit radius */}
