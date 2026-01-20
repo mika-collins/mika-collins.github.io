@@ -1,0 +1,79 @@
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-orbit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.about-content p {
+  max-width: 520px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.about-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.about-actions button {
+  background: transparent;
+  border: 1px solid rgba(156, 163, 175, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.about-actions button:hover {
+  background: rgba(156, 163, 175, 0.15);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr; /* stack grid for small screens */
+    text-align: center;
+  }
+
+  .about-orbit {
+    width: 60%;   /* shrink orbit */
+    margin: 0 auto;
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+}
+
