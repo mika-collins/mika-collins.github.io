@@ -21,6 +21,8 @@ const ProfileOrbit = () => {
 
           <a
             href="https://github.com/mika-collins"
+            target="_blank"
+            rel="noopener noreferrer"
             className="orbit-icon icon-top"
           >
             <FontAwesomeIcon icon={faGithub} />
@@ -28,6 +30,8 @@ const ProfileOrbit = () => {
 
           <a
             href="https://linkedin.com/in/mika-collins"
+            target="_blank"
+            rel="noopener noreferrer"
             className="orbit-icon icon-right has-moon"
           >
             <FontAwesomeIcon icon={faLinkedin} />

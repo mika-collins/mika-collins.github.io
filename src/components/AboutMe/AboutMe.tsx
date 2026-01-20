@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import ProfileOrbit from "../ProfileOrbit/ProfileOrbit";
+import ProfileOrbit from "../Visuals/ProfileOrbit/ProfileOrbit";
 
 const AboutMe = () => {
   return (
