@@ -19,6 +19,16 @@ const en = {
     },
   },
 
+    // Technologies section
+  technologies: {
+    title: "My Tech Stack",
+    categories: {
+      backend: "Backend",
+      frontend: "Frontend",
+      tools: "Tools & Concepts",
+    },
+  },
+
     // Footer content
     footer: {
         copyright: "© {{year}} Mika Collins. All rights reserved."
