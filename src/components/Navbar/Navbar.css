@@ -1,0 +1,56 @@
+/* Navbar wrapper */
+.navbar {
+  top: 0;
+  width: 100%;
+  padding: 20px 5px;
+  z-index: 3;
+}
+
+/* Inner layout */
+.navbar-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo / name */
+.navbar-logo {
+  color: rgba(229, 231, 235, 0.9);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Translate button */
+.navbar-translate {
+  background: transparent;
+  border: 1px solid rgba(156, 163, 175, 0.6);
+  color: rgba(229, 231, 235, 0.9);
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.navbar-translate:hover {
+  background: rgba(156, 163, 175, 0.15);
+  color: white;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .navbar { padding: 16px 5px; }
+
+  .navbar-logo { font-size: 1rem; }
+
+  .navbar-translate {
+    padding: 7px 16px;
+    font-size: 0.8rem;
+  }
+}

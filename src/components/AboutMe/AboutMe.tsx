@@ -1,7 +1,10 @@
 import "./AboutMe.css";
 import ProfileOrbit from "../Visuals/ProfileOrbit/ProfileOrbit";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about-section" id="about">
       <div className="about-container">
@@ -12,15 +15,13 @@ const AboutMe = () => {
 
         {/* Text content on right */}
         <div className="about-content">
-          <h2>About Section</h2>
+          <h2>{t("about.title")}</h2>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea hic dolores aliquam illum quaerat sed eum laboriosam sit, qui nulla voluptates porro ullam deserunt numquam odio magni quidem sapiente nobis.
-          </p>
+          <p>{t("about.description")}</p>
 
           <div className="about-actions">
-            <button>Button 1</button>
-            <button>Button 2</button>
+            <button>{t("about.actions.primary")}</button>
+            <button>{t("about.actions.secondary")}</button>
           </div>
         </div>
       </div>
@@ -29,3 +30,4 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+

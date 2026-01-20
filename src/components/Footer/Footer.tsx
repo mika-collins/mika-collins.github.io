@@ -5,8 +5,10 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
@@ -14,7 +16,7 @@ const Footer = () => {
 
       <div className="footer-content">
         <p className="footer-copy">
-          © {year} Mika Collins. All rights reserved.
+          {t("footer.copyright", { year })}
         </p>
 
         <div className="footer-icons">

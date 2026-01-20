@@ -1,6 +1,14 @@
 // About Me section english translations
 const en = {
 
+    // Navbar content
+  common: {
+    translate: "Translate",
+  },
+  site: {
+    name: "Your Name",
+  },
+
   // About Me section 
   about: {
     title: "About Me",

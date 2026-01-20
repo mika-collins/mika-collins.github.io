@@ -1,6 +1,14 @@
 // About Me section spanish translations
 const es = {
   
+  // Navbar content
+    common: {
+    translate: "Traducir",
+  },
+  site: {
+    name: "Tu Nombre",
+  },
+  
     // About Me section
     about: {
     title: "Sobre Mí",
