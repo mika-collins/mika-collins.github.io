@@ -1,0 +1,22 @@
+// About Me section english translations
+const en = {
+
+  // About Me section 
+  about: {
+    title: "About Me",
+    description: "This is the about me section.",
+    actions: {
+      primary: "Button 1",
+      secondary: "Button 2",
+    },
+  },
+
+    // Footer content
+    footer: {
+        copyright: "© {{year}} Mika Collins. All rights reserved."
+  },
+};
+
+export default en;
+
+
