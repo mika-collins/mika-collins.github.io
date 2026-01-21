@@ -1,6 +1,6 @@
 import "./Experience.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faBriefcase, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faMeteor, faSatellite, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 
 const Experience = () => {
@@ -13,7 +13,7 @@ const Experience = () => {
         {/* Education */}
         <div className="bento-card education">
           <div className="section-header">
-            <FontAwesomeIcon icon={faGraduationCap} className="section-icon" />
+            <FontAwesomeIcon icon={faUserAstronaut} className="section-icon" />
             <h3>{t("experience.education.label")}</h3>
           </div>
 
@@ -32,7 +32,7 @@ const Experience = () => {
         {/* Experience */}
         <div className="bento-card experience">
           <div className="section-header">
-            <FontAwesomeIcon icon={faBriefcase} className="section-icon" />
+            <FontAwesomeIcon icon={faMeteor} className="section-icon" />
             <h3>{t("experience.work.label")}</h3>
           </div>
 
@@ -77,7 +77,7 @@ const Experience = () => {
         {/* Societies */}
         <div className="bento-card societies">
           <div className="section-header">
-            <FontAwesomeIcon icon={faUsers} className="section-icon" />
+            <FontAwesomeIcon icon={faSatellite} className="section-icon" />
             <h3>{t("experience.societies.label")}</h3>
           </div>
 

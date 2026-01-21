@@ -13,7 +13,7 @@ const en = {
   about: {
     label: "Mission Control",
     title: "Mika Collins",
-    description: "I'm a software engineering student with a love for turning ideas into functional applications. I have an interest in front-end development and experience working with Python, Java, Javascript, and modern frameworks. I am always eager to explore new opportunities where I can contribute and continue learning as a software engineer.",
+    description: "I'm a software engineering student with a love for turning ideas into functional applications. I have an interest in front-end development and I'm always eager to explore new opportunities where I can contribute and continue learning.",
     note: "Feel free to reach out through my socials or contact form!",
     actions: {
       primary: "Contact Me",
@@ -47,17 +47,17 @@ const en = {
       },
       
       work: {
-        label: "Experience",
+        label: "Relevant Experience",
         positions: [
           {
             title: "Research Assistant",
             company: "UNCW Computer Science Department · Jan 2026-Present",
-            description: "TBA"
+            description: "Investigated agentic software engineering by building an automated framework using SWE-bench to analyze how autonomous AI agents solve real GitHub issues, focusing on robustness, security, and integrity of the agent's behavior."
           },
           {
             title: "Teaching Assistant",
             company: "UNCW Computer Science Department · Jan 2025-Present",
-            description: "Assisted in introductory and data structures & algorithms courses by reviewing Python assignments, debugging student programs, providing detailed feedback, and designing test files to assess program accuracy and functionality."
+            description: "Assisted in introductory (CSC 131) and data structures & algorithms (CSC 231) courses by reviewing Python assignments, debugging student programs, providing detailed feedback, and designing test files to assess program accuracy and functionality."
           },
           {
             title: "Research Assistant",
@@ -71,12 +71,12 @@ const en = {
         label: "Campus Involvement",
         list: [
           { 
-            org: "Association for Computing Machinery (ACM) · ", 
-            role: "Member" 
-          },
-          { 
             org: "UNCW Software Engineering Advisory Board · ", 
             role: "Student Representative" 
+          },
+          { 
+            org: "Association for Computing Machinery (ACM) · ", 
+            role: "Member" 
           },
           { 
             org: "Sigma Delta Pi, National Collegiate Hispanic Honor Society · ", 

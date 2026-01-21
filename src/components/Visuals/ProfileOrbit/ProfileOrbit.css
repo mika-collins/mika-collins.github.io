@@ -62,7 +62,7 @@
   align-items: center;
   text-decoration: none;
   animation: counter-rotate 30s linear infinite; /* counter rotation */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 .orbit-icon svg {
@@ -71,7 +71,7 @@
 
 .orbit-icon:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 14px rgba(156, 163, 175, 0.6);
+  filter: drop-shadow(0 0 8px #ffffff);
 }
 
 /* Orbit icon positions  */

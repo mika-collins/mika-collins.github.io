@@ -37,7 +37,6 @@ const technologies = [
       { icon: faReact, label: "React" },
       { icon: faVuejs, label: "Vue.js" },
       { icon: faJs, label: "TypeScript" },
-      { icon: faJs, label: "Vite" }
     ],
   },
   {
