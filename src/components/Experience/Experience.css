@@ -14,18 +14,19 @@
 }
 
 .bento-card {
-  background: rgba(17, 24, 39, 0.6);
-  border: 1px solid rgba(148, 163, 184, 0.15);
-  border-radius: 20px;
+  background: rgba(26, 26, 46, 0.55); /* deep-purple glass */
+  border: 1px solid rgba(127, 127, 255, 0.18); /* soft violet */
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
   padding: 28px;
   color: #e5e7eb;
   position: relative;
-  backdrop-filter: blur(8px);
   transition: border-color 0.3s ease;
 }
 
 .bento-card:hover {
   border-color: rgba(127, 127, 255, 0.35);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.08);
 }
 
 .bento-card::after {
@@ -39,7 +40,7 @@
 
 .mono-meta {
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.70rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #7f7fff;
@@ -151,10 +152,13 @@
 .timeline-item {
   position: relative;
   padding: 16px 0;
+}
+
+.timeline-content {
   transition: transform 0.25s ease;
 }
 
-.timeline-item:hover {
+.timeline-item:hover .timeline-content {
   transform: translateX(4px);
 }
 
