@@ -1,9 +1,9 @@
 .about-section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 80px 24px;
+  padding: 20px 24px;
   position: relative;
   z-index: 1;
 }
