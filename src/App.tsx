@@ -4,6 +4,7 @@ import RocketShip from "./components/Visuals/Rocket/RocketShip";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import TechSkills from "./components/TechSkills/TechSkills";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* Page content*/}
       <Navbar />
       <AboutMe />
-      < TechSkills />
+      <TechSkills />
+      <Experience />
       <RocketShip />
       <Footer />
       {/* Other sections here later */}

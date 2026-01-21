@@ -1,0 +1,243 @@
+/* ===============================
+   EXPERIENCE SECTION LAYOUT
+================================ */
+
+.experience-section {
+  width: 100%;
+  padding: 120px 24px;
+}
+
+.experience-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+/* ===============================
+   BENTO CARDS
+================================ */
+
+.bento-card {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 20px;
+  padding: 28px;
+  color: #e5e7eb;
+  position: relative;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s ease;
+}
+
+.bento-card:hover {
+  border-color: rgba(127, 127, 255, 0.35);
+}
+
+.bento-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(127, 127, 255, 0.06);
+  pointer-events: none;
+}
+
+.mono-meta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #7f7fff;
+  opacity: 0.9;
+}
+
+.card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  margin: 6px 0 4px;
+}
+
+/* Section header with icon */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
+  margin-bottom: 1px;
+}
+
+.section-icon {
+  font-size: 1.5rem; /* adjust size to match heading */
+  color: #7f7fff;    /* match purple theme */
+}
+
+.card-description {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.timeline-meta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #7f7fff;
+  margin-bottom: 4px;
+}
+
+.timeline-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.muted {
+  opacity: 0.7;
+}
+
+/* ===============================
+   GRID PLACEMENT
+================================ */
+
+.education {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.societies {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.experience {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+/* ===============================
+   TIMELINE
+================================ */
+
+.timeline {
+  position: relative;
+  margin-top: 12px;
+  padding-left: 40px; /* spacing for dots */
+}
+
+/* Vertical gradient line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(127, 127, 255, 0.6),
+    rgba(127, 127, 255, 0.1)
+  );
+}
+
+/* White pulse traveling down vertical line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -30%;
+  width: 2px;
+  height: 15%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    #ffffff,
+    rgba(255, 255, 255, 0)
+  );
+  animation: line-pulse 1.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  padding: 16px 0;
+  transition: transform 0.25s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(4px);
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  left: -36px; 
+  top: 22px;
+
+  width: 10px;
+  height: 10px;
+  background: #7f7fff;
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 12px rgba(255, 255, 255, 0.6);
+
+  animation: dot-idle-pulse 2.5s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover interaction */
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.2);
+  box-shadow:
+    0 0 22px rgba(255, 255, 255, 1);
+}
+
+/* Animations */
+@keyframes dot-idle-pulse {
+  0% {
+    box-shadow:
+      0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 16px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes line-pulse {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 85%;
+    opacity: 0;
+  }
+}
+
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience {
+    grid-row: auto;
+  }
+}

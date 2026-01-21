@@ -31,6 +31,65 @@ const en = {
     },
   },
 
+    // Experience section
+    experience: {
+      education: {
+        label: "Education",
+        degree: "B.S. Software Engineering",
+        university: "University of North Carolina Wilmington · 2026",
+        minor: "Minor: Computer Science & Spanish",
+        courseworkTitle: "Relevant Coursework",
+        coursework: [
+          "Data Structures",
+          "Algorithms",
+          "Databases"
+        ]
+      },
+      
+      work: {
+        label: "Experience",
+        positions: [
+          {
+            title: "Research Assistant",
+            company: "UNCW Computer Science Department · Jan 2026-Present",
+            description: "TBA"
+          },
+          {
+            title: "Teaching Assistant",
+            company: "UNCW Computer Science Department · Jan 2025-Present",
+            description: "Assisted in introductory and data structures & algorithms courses by reviewing Python assignments, debugging student programs, providing detailed feedback, and designing test files to assess program accuracy and functionality."
+          },
+          {
+            title: "Research Assistant",
+            company: "UNCW Computer Science Department · Summer 2025",
+            description: "Conducted applied research to evaluate the capability of LLMs to generate secure backend web application code, creating benchmark datasets and focusing on vulnerabilities such as SQL injection, XSS, and data exposure."
+          }
+        ]
+      },
+      
+      societies: {
+        label: "Campus Involvement",
+        list: [
+          { 
+            org: "Association for Computing Machinery (ACM) · ", 
+            role: "Member" 
+          },
+          { 
+            org: "UNCW Software Engineering Advisory Board · ", 
+            role: "Student Representative" 
+          },
+          { 
+            org: "Sigma Delta Pi, National Collegiate Hispanic Honor Society · ", 
+            role: "Member" 
+          },
+          {
+            org: "Society of Women Engineers (SWE) · ",
+            role: "Member"
+          },
+        ]
+      }
+    },
+
     // Footer content
     footer: {
         copyright: "© {{year}} Mika Collins. All rights reserved."
