@@ -6,16 +6,18 @@ const en = {
     translate: "Translate",
   },
   site: {
-    name: "Mika.dev",
+    name: "< MC />",
   },
 
   // About Me section 
   about: {
-    title: "About Me",
-    description: "This is the about me section.",
+    label: "Mission Control",
+    title: "Mika Collins",
+    description: "I'm a software engineering student with a love for turning ideas into functional applications. I have an interest in front-end development and experience working with Python, Java, Javascript, and modern frameworks. I am always eager to explore new opportunities where I can contribute and continue learning as a software engineer.",
+    note: "Feel free to reach out through my socials or contact form!",
     actions: {
-      primary: "Button 1",
-      secondary: "Button 2",
+      primary: "Contact Me",
+      secondary: "Download Resume",
     },
   },
 

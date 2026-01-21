@@ -15,9 +15,14 @@ const AboutMe = () => {
 
         {/* Text content on right */}
         <div className="about-content">
+          <span className="about-label">
+            {t("about.label")}
+          </span>
+
           <h2>{t("about.title")}</h2>
 
           <p>{t("about.description")}</p>
+          <p>{t("about.note")}</p>
 
           <div className="about-actions">
             <button>{t("about.actions.primary")}</button>

@@ -30,14 +30,28 @@
   gap: 20px;
 }
 
+.about-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #7f7fff;
+  margin-bottom: 8px;
+}
+
 .about-content h2 {
-  font-size: 2.5rem;
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+  font-size: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   margin: 0;
 }
 
 .about-content p {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
   max-width: 520px;
-  line-height: 1.6;
   opacity: 0.9;
 }
 
@@ -48,10 +62,15 @@
 }
 
 .about-actions button {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
   background: transparent;
   border: 1px solid rgba(156, 163, 175, 0.6);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.25s ease;
