@@ -96,26 +96,25 @@ const Experience = () => {
             <h3>{t("experience.societies.label")}</h3>
           </div>
 
-          <ul className="card-description">
-            <li>
-              {t("experience.societies.list.0.org")}
-              {t("experience.societies.list.0.role")}
-            </li>
-            <li>
-              {t("experience.societies.list.1.org")}
-              {t("experience.societies.list.1.role")}
-            </li>
-            <li>
-              {t("experience.societies.list.2.org")}
-              {t("experience.societies.list.2.role")}
-            </li>
-            <li>
-              {t("experience.societies.list.3.org")}
-              {t("experience.societies.list.3.role")}
-            </li>
-          </ul>
+          <div className="card-description">
+            <div className="society-item">
+              <span className="society-org">{t("experience.societies.list.0.org")}</span>
+              <span className="society-role">{t("experience.societies.list.0.role")}</span>
+            </div>
+            <div className="society-item">
+              <span className="society-org">{t("experience.societies.list.1.org")}</span>
+              <span className="society-role">{t("experience.societies.list.1.role")}</span>
+            </div>
+            <div className="society-item">
+              <span className="society-org">{t("experience.societies.list.2.org")}</span>
+              <span className="society-role">{t("experience.societies.list.2.role")}</span>
+            </div>
+            <div className="society-item">
+              <span className="society-org">{t("experience.societies.list.3.org")}</span>
+              <span className="society-role">{t("experience.societies.list.3.role")}</span>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
   );

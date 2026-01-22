@@ -105,6 +105,29 @@
   grid-row: 1 / span 2;
 }
 
+.society-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;   
+}
+
+.society-org {
+  font-family: "Inter", sans-serif; 
+  font-weight: 500;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  text-overflow: ellipsis;
+}
+
+.society-role {
+  font-family: "JetBrains Mono", monospace;
+  color: #7f7fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  margin-top: 2px; 
+}
+
 /* Timeline styles */
 .timeline {
   position: relative;

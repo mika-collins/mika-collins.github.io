@@ -75,20 +75,20 @@ const en = {
         label: "Campus Involvement",
         list: [
           { 
-            org: "UNCW Software Engineering Advisory Board · ", 
-            role: "Student Representative" 
+            org: "Sigma Delta Pi, National Collegiate Hispanic Honor Society", 
+            role: "Member · April 2025-Present" 
           },
           { 
-            org: "Association for Computing Machinery (ACM) · ", 
-            role: "Member" 
-          },
-          { 
-            org: "Sigma Delta Pi, National Collegiate Hispanic Honor Society · ", 
-            role: "Member" 
+            org: "UNCW Software Engineering Advisory Board", 
+            role: "Student Representative  · Jan 2025-Present" 
           },
           {
-            org: "Society of Women Engineers (SWE) · ",
-            role: "Member"
+            org: "Society of Women Engineers (SWE)",
+            role: "Member · Sep 2024-Present"
+          },
+          { 
+            org: "Association for Computing Machinery (ACM)", 
+            role: "Member · Feb 2024-Present" 
           },
         ]
       }

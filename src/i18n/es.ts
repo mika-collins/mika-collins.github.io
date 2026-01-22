@@ -75,20 +75,20 @@ const es = {
         label: "Participación en el Campus",
         list: [
           { 
-            org: "Consejo Asesor de Ingeniería de Software de UNCW · ", 
-            role: "Representante Estudiantil" 
+            org: "Sigma Delta Pi, Sociedad Nacional Universitaria Hispana de Honor", 
+            role: "Miembro · Abril 2025-Presente" 
           },
           { 
-            org: "Asociación para la Maquinaria de Computación (ACM) · ", 
-            role: "Miembro" 
-          },
-          { 
-            org: "Sigma Delta Pi, Sociedad Nacional Universitaria Hispana de Honor · ", 
-            role: "Miembro" 
+            org: "Consejo Asesor de Ingeniería de Software de UNCW", 
+            role: "Representante Estudiantil  · Ene 2025-Presente" 
           },
           {
-            org: "Sociedad de Mujeres Ingenieras (SWE) · ",
-            role: "Miembro"
+            org: "Sociedad de Mujeres Ingenieras (SWE)",
+            role: "Miembro · Sep 2024-Presente"
+          },
+          { 
+            org: "Asociación para la Maquinaria de Computación (ACM)", 
+            role: "Miembro · Feb 2024-Presente" 
           },
         ]
       }
