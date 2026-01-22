@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import TechSkills from "./components/TechSkills/TechSkills";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
       <AboutMe />
       <TechSkills />
       <Experience />
+      <Projects />
       <RocketShip />
       <Footer />
-      {/* Other sections here later */}
     </div>
   );
 }

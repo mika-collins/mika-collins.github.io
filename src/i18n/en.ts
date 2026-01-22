@@ -94,6 +94,39 @@ const en = {
       }
     },
 
+    // Projects section
+    projects: {
+    list: [
+      {
+        title: "SFTB Enterprises Website",
+        timeframe: "December 2025 - Present",
+        description: "A website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and various featured projects.",
+        image: "/SFTB/SFTBWebsite.png",
+        tech: ["Javascript", "React", "HTML/CSS", "Vite", "Node.js", "VSCode"],
+        github: "https://github.com/mika-collins",
+        sourceLabel: "Under Development"
+      },
+      {
+        title: "The Floor is Lava",
+        timeframe: "August 2025 - December 2025",
+        description: "A web application that visualizes real-time room occupancy by scanning WiFi signals via Raspberry Pis and displays the data as a dynamic heatmap.",
+        image: "/Heatmap/HeatmapLogin.png",
+        tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "VSCode"],
+        github: "https://github.com/mika-collins",
+        sourceLabel: "View Source Code"
+      },
+      {
+        title: "Internship Application Tracker",
+        timeframe: "Summer 2025",
+        description: "A Java-based application designed to help students track, organize, and manage their internship applications throughout college.",
+        image: "/InternshipTracker/InternshipTracker.png",
+        tech: ["Java", "Scenebuilder", "CSS", "JavaFX", "IntelliJ IDEA"],
+        github: "https://github.com/mika-collins",
+        sourceLabel: "View Source Code"
+      },
+    ],
+  },
+
     // Footer content
     footer: {
         copyright: "© {{year}} Mika Collins. All rights reserved."
