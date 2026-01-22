@@ -104,7 +104,8 @@ const en = {
         image: "/SFTB/SFTBWebsite.png",
         tech: ["Javascript", "React", "HTML/CSS", "Vite", "Node.js", "VSCode"],
         github: "https://github.com/mika-collins",
-        sourceLabel: "Under Development"
+        sourceLabel: "Under Development",
+        disabled: true
       },
       {
         title: "The Floor is Lava",
@@ -113,7 +114,8 @@ const en = {
         image: "/Heatmap/HeatmapLogin.png",
         tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "VSCode"],
         github: "https://github.com/mika-collins",
-        sourceLabel: "View Source Code"
+        sourceLabel: "View Source Code",
+        disabled: false
       },
       {
         title: "Internship Application Tracker",
@@ -121,8 +123,9 @@ const en = {
         description: "A Java-based application designed to help students track, organize, and manage their internship applications throughout college.",
         image: "/InternshipTracker/InternshipTracker.png",
         tech: ["Java", "Scenebuilder", "CSS", "JavaFX", "IntelliJ IDEA"],
-        github: "https://github.com/mika-collins",
-        sourceLabel: "View Source Code"
+        github: "https://github.com/mika-collins/Internship-Application-Tracker",
+        sourceLabel: "View Source Code",
+        disabled: false
       },
     ],
   },

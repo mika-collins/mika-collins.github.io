@@ -11,6 +11,7 @@ type Project = {
   tech: string[];
   github: string;
   sourceLabel: string;
+  disabled: boolean;
 };
 
 const Projects = () => {
@@ -49,15 +50,22 @@ const Projects = () => {
             </div>
 
             {/* GitHub button */}
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="github-button"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-              <span>{t(project.sourceLabel)}</span>
-            </a>
+            {project.disabled ? (
+              <button className="github-button disabled" disabled>
+                <FontAwesomeIcon icon={faGithub} />
+                <span>{t(project.sourceLabel)}</span>
+              </button>
+            ) : (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="github-button"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                <span>{t(project.sourceLabel)}</span>
+              </a>
+            )}
           </div>
         ))}
       </div>
