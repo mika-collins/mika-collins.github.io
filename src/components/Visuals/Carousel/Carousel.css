@@ -1,0 +1,65 @@
+.pill-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 12px;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.pill-track {
+  display: flex;
+  gap: 12px;
+  padding-right: 12px; 
+  width: max-content;
+  flex-wrap: nowrap;
+  
+  animation: scroll var(--duration, 30s) linear infinite;
+  
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.pill-track.left {
+  animation-direction: normal;
+}
+
+.pill-track.right {
+  animation-direction: reverse;
+}
+
+.pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+  background: rgba(127, 127, 255, 0.12);
+  border: 1px solid rgba(127, 127, 255, 0.25);
+  white-space: nowrap;
+  user-select: none; 
+}
+
+/* Pause carousel on hover */
+.pill-carousel:hover .pill-track {
+  animation-play-state: paused;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+

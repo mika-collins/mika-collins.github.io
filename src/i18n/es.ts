@@ -37,12 +37,16 @@ const es = {
         label: "Educación",
         degree: "B.S. Ingeniería de Software",
         university: "Universidad de North Carolina Wilmington · 2026",
-        minor: "Minor: Ciencias de la Computación y Español",
-        courseworkTitle: "Cursos Relevantes",
+        minor: "Minors: Ciencias de la Computación y Español",
+        courseworkTitle: "Cursos Relevantes:",
         coursework: [
-          "Estructuras de Datos",
-          "Algoritmos",
-          "Bases de Datos"
+          "Estructuras de Datos y Algoritmos",
+          "Programación Orientada a Objetos",
+          "Diseño e Implementación de Bases de Datos",
+
+          "Construcción de Software",
+          "Desarrollo Web Cliente y Servidor",
+          "Seguridad Aplicada de Software",
         ]
       },
       

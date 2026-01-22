@@ -2,6 +2,7 @@ import "./Experience.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMeteor, faSatellite, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import Carousel from "../Visuals/Carousel/Carousel";
 
 const Experience = () => {
     const { t } = useTranslation();
@@ -19,14 +20,28 @@ const Experience = () => {
 
           <h4 className="card-title">{t("experience.education.degree")}</h4>
           <p className="mono-meta">{t("experience.education.university")}</p>
-          <p className="card-description muted">{t("experience.education.minor")}</p>
+          <p className="card-description">{t("experience.education.minor")}</p>
+          <p className="card-description">{t("experience.education.courseworkTitle")}</p>
+
 
           {/* Relevant Coursework */}
-          <ul className="card-description">
-            <li>{t("experience.education.coursework.0")}</li>
-            <li>{t("experience.education.coursework.1")}</li>
-            <li>{t("experience.education.coursework.2")}</li>
-          </ul>
+          <Carousel
+            direction="left"
+            items={[
+              t("experience.education.coursework.0"),
+              t("experience.education.coursework.1"),
+              t("experience.education.coursework.2"),
+            ]}
+          />
+
+          <Carousel
+            direction="right"
+            items={[
+              t("experience.education.coursework.3"),
+              t("experience.education.coursework.4"),
+              t("experience.education.coursework.5"),
+            ]}
+          />
         </div>
 
         {/* Experience */}

@@ -37,12 +37,16 @@ const en = {
         label: "Education",
         degree: "B.S. Software Engineering",
         university: "University of North Carolina Wilmington · 2026",
-        minor: "Minor: Computer Science & Spanish",
-        courseworkTitle: "Relevant Coursework",
+        minor: "Minors: Computer Science & Spanish",
+        courseworkTitle: "Relevant Courses:",
         coursework: [
-          "Data Structures",
-          "Algorithms",
-          "Databases"
+          "Data Structures & Algorithms",
+          "Object Oriented Programming",
+          "Database Design & Implementation",
+
+          "Software Construction",
+          "Client & Server Web Development",
+          "Applied Software Security",
         ]
       },
       
