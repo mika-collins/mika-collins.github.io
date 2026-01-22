@@ -1,7 +1,7 @@
 import "./Projects.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 type Project = {
   title: string;
@@ -52,7 +52,7 @@ const Projects = () => {
             {/* GitHub button */}
             {project.disabled ? (
               <button className="github-button disabled" disabled>
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 <span>{t(project.sourceLabel)}</span>
               </button>
             ) : (
@@ -62,7 +62,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="github-button"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 <span>{t(project.sourceLabel)}</span>
               </a>
             )}
