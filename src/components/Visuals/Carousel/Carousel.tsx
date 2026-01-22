@@ -1,27 +1,39 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 import "./Carousel.css";
 
-interface PillCarouselProps {
+interface CarouselProps {
   items: string[];
   direction?: "left" | "right";
-  baseSpeed?: number; // Pixels per second
+  baseSpeed?: number;
 }
 
-const PillCarousel = ({
+const Carousel = ({
   items,
   direction = "left",
-  baseSpeed = 40, // Default 40px per second
-}: PillCarouselProps) => {
+  baseSpeed = 40,
+}: CarouselProps) => {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [duration, setDuration] = useState(30); // Fallback duration
+  const [duration, setDuration] = useState(0); // Start at 0 to prevent initial jump
 
-  useEffect(() => {
-    if (!trackRef.current) return;
+  useLayoutEffect(() => {
+    const calculateDuration = () => {
+      if (!trackRef.current) return;
+      const scrollWidth = trackRef.current.scrollWidth;
+      const trackWidth = scrollWidth / 2;
+      const calculatedDuration = trackWidth / baseSpeed;
+      setDuration(calculatedDuration);
+    };
 
-    const trackWidth = trackRef.current.scrollWidth; // Total width of all pills
-    const calculatedDuration = trackWidth / baseSpeed;
+    // Initial calculation
+    calculateDuration();
 
-    setDuration(calculatedDuration);
+    // Recalculate if the window resizes
+    window.addEventListener("resize", calculateDuration);
+    document.fonts.ready.then(calculateDuration);
+
+    return () => {
+      window.removeEventListener("resize", calculateDuration);
+    };
   }, [items, baseSpeed]);
 
   return (
@@ -29,9 +41,9 @@ const PillCarousel = ({
       <div
         ref={trackRef}
         className={`pill-track ${direction}`}
-        style={{ animationDuration: `${duration}s` }}
+        style={{ "--duration": `${duration}s` } as React.CSSProperties}
       >
-        {items.map((item, index) => (
+        {[...items, ...items].map((item, index) => (
           <span className="pill" key={index}>
             {item}
           </span>
@@ -41,5 +53,6 @@ const PillCarousel = ({
   );
 };
 
-export default PillCarousel;
+export default Carousel;
+
 

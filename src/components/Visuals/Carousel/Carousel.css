@@ -48,12 +48,7 @@
   user-select: none; 
 }
 
-/* Pause carousel on hover */
-.pill-carousel:hover .pill-track {
-  animation-play-state: paused;
-}
-
-/* Animation */
+/* Animations */
 @keyframes scroll {
   0% {
     transform: translate3d(0, 0, 0);
