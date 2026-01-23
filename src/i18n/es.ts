@@ -3,7 +3,7 @@ const es = {
 
     // Navbar content
   common: {
-    translate: "Traducir",
+    translate: "",
   },
   site: {
     name: "< MC />",
