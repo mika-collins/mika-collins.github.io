@@ -14,7 +14,7 @@ const en = {
     label: "Mission Control",
     title: "Mika Collins",
     description: "I'm a software engineering student with a love for turning ideas into functional applications. I have an interest in front-end development and I'm always eager to explore new opportunities where I can contribute and continue learning.",
-    note: "Feel free to reach out through my socials or contact form!",
+    location: "North Carolina, USA",
     actions: {
       primary: "Contact Me",
       secondary: "Download Resume",

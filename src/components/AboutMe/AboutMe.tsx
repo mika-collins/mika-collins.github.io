@@ -1,6 +1,8 @@
 import "./AboutMe.css";
 import ProfileOrbit from "../Visuals/ProfileOrbit/ProfileOrbit";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const AboutMe = () => {
   const { t } = useTranslation();
@@ -22,7 +24,10 @@ const AboutMe = () => {
           <h2>{t("about.title")}</h2>
 
           <p>{t("about.description")}</p>
-          <p>{t("about.note")}</p>
+          <p className="about-location">
+            <FontAwesomeIcon icon={faLocationDot} className="location-icon" />
+            {t("about.location")}
+          </p>
 
           <div className="about-actions">
             <button>{t("about.actions.primary")}</button>
