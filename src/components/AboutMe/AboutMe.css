@@ -108,6 +108,8 @@
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
 
   padding: 12px 20px;
   border-radius: 999px;
