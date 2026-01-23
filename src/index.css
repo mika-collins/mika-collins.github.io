@@ -1,19 +1,18 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --space-black: #050508;
   --deep-purple: #1a1a2e;
 }
 
-/* Global layout + background */
 html, body, #root {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  min-height: 100%;
   font-family: sans-serif;
-  position: relative;
 
-  /* Space background */
   background: radial-gradient(
     circle at center,
     var(--deep-purple) 0%,
@@ -24,11 +23,8 @@ html, body, #root {
 /* Star layer */
 .stars {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* clicks pass through */
+  inset: 0;
+  pointer-events: none;
   overflow: hidden;
   z-index: 0;
 }
@@ -47,3 +43,4 @@ html, body, #root {
   from { opacity: 0.3; }
   to { opacity: 1; }
 }
+
