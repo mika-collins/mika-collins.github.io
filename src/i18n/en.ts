@@ -102,10 +102,20 @@ const en = {
         timeframe: "December 2025 - Present",
         description: "A website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and various featured projects.",
         image: "/SFTB/SFTBWebsite.png",
-        tech: ["Javascript", "React", "HTML/CSS", "Vite", "Node.js", "VSCode"],
+        tech: ["Javascript", "React", "HTML/CSS", "Node.js", "VSCode"],
         github: "https://github.com/mika-collins",
         sourceLabel: "Under Development",
         disabled: true
+      },
+      {
+        title: "Portfolio Site",
+        timeframe: "December 2025 - January 2026",
+        description: "A personal site with a space inspired theme to showcase my skills, experience, and projects.",
+        image: "/PersonalPortfolio/PersonalPortfolio.png",
+        tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "VSCode"],
+        github: "https://github.com/mika-collins",
+        sourceLabel: "View Source Code",
+        disabled: false
       },
       {
         title: "The Floor is Lava",
@@ -124,6 +134,16 @@ const en = {
         image: "/InternshipTracker/InternshipTracker.png",
         tech: ["Java", "Scenebuilder", "CSS", "JavaFX", "IntelliJ IDEA"],
         github: "https://github.com/mika-collins/Internship-Application-Tracker",
+        sourceLabel: "View Source Code",
+        disabled: false
+      },
+      {
+        title: "Halloween Store Website",
+        timeframe: "August 2025 - October 2025",
+        description: "A mock website for a Halloween store built through a series of labs for a client-side web development course.",
+        image: "/HalloweenStore/HalloweenStore.png",
+        tech: ["HTML/CSS", "VSCode"],
+        github: "https://github.com/mika-collins/SENG-365-Halloween-Website",
         sourceLabel: "View Source Code",
         disabled: false
       },

@@ -98,19 +98,29 @@ const es = {
     projects: {
     list: [
       {
-        title: "SFTB Enterprises Sitio Web",
+        title: "Sitio web de SFTB Enterprises",
         timeframe: "Diciembre 2025 - Presente",
-        description: "Un sitio web creado para un negocio local de camiones de volteo basado en Albemarle, NC. El sitio muestra los servicios de la empresa, información de contacto y varios proyectos destacados.",
+        description: "Un sitio web creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y varios proyectos destacados.",
         image: "/SFTB/SFTBWebsite.png",
-        tech: ["Javascript", "React", "HTML/CSS", "Vite", "Node.js", "VSCode"],
+        tech: ["Javascript", "React", "HTML/CSS", "Node.js", "VSCode"],
         github: "https://github.com/mika-collins",
         sourceLabel: "En Desarrollo",
         disabled: true
       },
       {
+        title: "Sitio de Portafolio",
+        timeframe: "Diciembre 2025 - Enero 2026",
+        description: "Un sitio personal con un tema inspirado en el espacio para mostrar mis habilidades, experiencia y proyectos.",
+        image: "/PersonalPortfolio/PersonalPortfolio.png",
+        tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "VSCode"],
+        github: "https://github.com/mika-collins",
+        sourceLabel: "Ver Código Fuente",
+        disabled: false
+      },
+      {
         title: "The Floor is Lava",
         timeframe: "Agosto 2025 - Diciembre 2025",
-        description: "Una aplicación web que visualiza la ocupación en tiempo real de una habitación escaneando señales WiFi a través de Raspberry Pis y muestra los datos como un mapa de calor dinámico.",
+        description: "Una aplicación web que visualiza la ocupación de habitaciones en tiempo real escaneando señales WiFi a través de Raspberry Pis y muestra los datos como un mapa de calor dinámico.",
         image: "/Heatmap/HeatmapLogin.png",
         tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "VSCode"],
         github: "https://github.com/mika-collins",
@@ -120,10 +130,20 @@ const es = {
       {
         title: "Rastreador de Solicitudes de Prácticas",
         timeframe: "Verano 2025",
-        description: "Una aplicación basada en Java diseñada para ayudar a los estudiantes a rastrear, organizar y gestionar sus solicitudes de prácticas a lo largo de la universidad.",
+        description: "Una aplicación basada en Java diseñada para ayudar a los estudiantes a rastrear, organizar y gestionar sus solicitudes de prácticas durante la universidad.",
         image: "/InternshipTracker/InternshipTracker.png",
         tech: ["Java", "Scenebuilder", "CSS", "JavaFX", "IntelliJ IDEA"],
         github: "https://github.com/mika-collins/Internship-Application-Tracker",
+        sourceLabel: "Ver Código Fuente",
+        disabled: false
+      },
+      {
+        title: "Sitio de la Tienda de Halloween",
+        timeframe: "Agosto 2025 - Octubre 2025",
+        description: "Un sitio web simulado para una tienda de Halloween construido a través de una serie de laboratorios para un curso de desarrollo web del lado del cliente.",
+        image: "/HalloweenStore/HalloweenStore.png",
+        tech: ["HTML/CSS", "VSCode"],
+        github: "https://github.com/mika-collins/SENG-365-Halloween-Website",
         sourceLabel: "Ver Código Fuente",
         disabled: false
       },
