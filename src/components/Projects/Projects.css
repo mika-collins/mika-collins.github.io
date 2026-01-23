@@ -81,6 +81,33 @@
   pointer-events: none;  
 }
 
+.projects-view-more {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-more-button {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(127, 127, 255, 0.35);
+  background: rgba(26, 26, 46, 0.6);
+  color: #e5e7eb;
+
+  cursor: pointer;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.view-more-button:hover {
+  border-color: rgba(127, 127, 255, 0.7);
+  box-shadow: 0 0 18px rgba(127, 127, 255, 0.35);
+}
+
 @media (max-width: 900px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
