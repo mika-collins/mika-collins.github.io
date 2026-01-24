@@ -6,7 +6,7 @@ const en = {
     translate: "",
   },
   site: {
-    name: "< MC />",
+    name: "Mika",
   },
 
   // About Me section 

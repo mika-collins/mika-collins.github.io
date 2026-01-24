@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -21,8 +23,14 @@ const Navbar = () => {
   return (
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="navbar-content">
-        <div className="navbar-logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          {t("site.name")}
+        <div
+          className="navbar-logo-container"
+          onClick={() =>
+            window.scrollTo({ top: 0, behavior: "smooth" })
+          }
+        >
+          <FontAwesomeIcon icon={faRocket} className="navbar-icon" />
+          <div className="navbar-logo">{t("site.name")}</div>
         </div>
 
         <button className="navbar-translate" onClick={toggleLanguage}>
@@ -34,4 +42,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
