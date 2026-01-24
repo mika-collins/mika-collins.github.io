@@ -36,7 +36,6 @@ const technologies = [
       { icon: faJs, label: "JavaScript" },
       { icon: faReact, label: "React" },
       { icon: faVuejs, label: "Vue.js" },
-      { icon: faJs, label: "TypeScript" },
     ],
   },
   {
@@ -71,6 +70,18 @@ const Technologies = () => {
                     <span>{item.label}</span>
                   </div>
                 ))}
+
+                {category.key === "frontend" && (
+                  <div className="tech-item">
+                    {/* Shadow wrapper */}
+                    <div className="custom-icon-shadow">
+                      {/* Masked icon */}
+                      <div className="custom-icon-wrapper" />
+                    </div>
+                    <span>TypeScript</span>
+                  </div>
+                )}
+
               </div>
             </div>
           ))}

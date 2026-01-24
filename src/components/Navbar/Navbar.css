@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-/* New container to hold icon + logo */
+/* Container for logo and text */
 .navbar-logo-container {
   display: flex;
   align-items: center;
@@ -28,18 +28,16 @@
   color: #7f7fff;
   margin-right: 0.5rem;
   font-size: 1.2rem;
-  transition: transform 0.3s ease; /* smooth rotation */
-  transform: rotate(0deg); /* default pointing up */
+  transition: transform 0.3s ease; 
+  transform: rotate(0deg); 
 }
 
-/* Rotate the rocket slightly on hover to point at the logo */
+/* Rotate the rocket on hover */
 .navbar-logo-container:hover .navbar-icon {
-  transform: rotate(42deg); /* adjust angle as needed */
+  transform: rotate(42deg); 
 }
 
-
-
-/* Logo / name */
+/* Logo text */
 .navbar-logo {
   font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
   font-size: 1.05rem;

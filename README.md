@@ -9,7 +9,7 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 - **TypeScript** - For type-safe JavaScript
 - **CSS** - For styling, animations, and responsive design
 - **i18next** - For multi-language support (en/es)
-- **Font Awesome** - For icons
+- **Font Awesome & Simple Icons** - For icons
 - **Google Analytics 4 (GA4)** - For tracking user interactions 
 - **GitHub Pages** - For free hosting of the site
 
@@ -41,7 +41,7 @@ src/
 - **GA4 Event Tracking**: Resume downloads and social media links are tracked with custom events to understand user behavior. 
 
 ## Credits
-- **Visual Components** - Two visual components (PRofileOrbit and Rocket) are derived from code originally craeted by JkHuger. The original code has been modified and integrated into this project. 
-- **Icons** - Icons provided by [Font Awesome](https://fontawesome.com/)
+- **Visual Components** - Two visual components (ProfileOrbit and Rocket) are derived from code originally craeted by JkHuger. The original code has been modified and integrated into this project. 
+- **Icons** - TypeScript icon provided by [Simple Icons](https://simpleicons.org) and remaining icons provided by [Font Awesome](https://fontawesome.com/)
 - **Libraries** - Open-source libraries include `React`, `i18next`, and others, as detailed in the Technologies section.
 - **AI Assistance** - Portions of the site design and development were assisted by AI to streamline coding and layout descisions. 

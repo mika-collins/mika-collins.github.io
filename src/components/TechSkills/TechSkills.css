@@ -61,3 +61,33 @@
   color: #fff; 
   filter: drop-shadow(0 0 15px #ffffff);
 }
+
+/* TypeScript Custom Icon Styles */
+.custom-icon-shadow {
+  display: inline-flex;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.custom-icon-wrapper {
+  width: 2em;
+  height: 2em;
+  background-color: #7f7fff;
+
+  mask: url('./typescript.svg') no-repeat center;
+  -webkit-mask: url('./typescript.svg') no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+
+  transition: background-color 0.3s;
+}
+
+.tech-item:hover .custom-icon-shadow {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 15px #ffffff);
+}
+
+.tech-item:hover .custom-icon-wrapper {
+  background-color: #fff;
+}
+
+
