@@ -127,18 +127,85 @@
   box-shadow: 0 0 15px rgba(127, 127, 255, 0.4);
 }
 
-@media (max-width: 768px) {
+/* Responsive design for small laptops */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 96px 20px;
+  }
+
   .about-container {
-    grid-template-columns: 1fr; /* stack grid for small screens */
+    max-width: 960px;
+    gap: 48px;
+  }
+
+  .about-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 72px 16px;
+    min-height: auto;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
     text-align: center;
   }
 
   .about-orbit {
-    width: 60%;   /* shrink orbit */
-    margin: 0 auto;
+    order: -1;
+  }
+
+  .about-content {
+    align-items: center;
+  }
+
+  .about-content p {
+    max-width: 520px;
   }
 
   .about-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 56px 14px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .about-actions button {
+    width: 100%;
     justify-content: center;
   }
 }
