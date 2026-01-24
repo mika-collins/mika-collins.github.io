@@ -108,14 +108,99 @@
   box-shadow: 0 0 18px rgba(127, 127, 255, 0.35);
 }
 
-@media (max-width: 900px) {
+/* Responsive design for small laptops */
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 96px 20px;
+  }
+
   .projects-container {
+    max-width: 1200px;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .project-image-wrapper {
+    height: 190px;
+  }
+
+  .tech-badge {
+    font-size: 0.65rem;
+  }
+
+  .github-button {
+    font-size: 0.65rem;
+    padding: 9px 12px;
   }
 }
 
-@media (max-width: 600px) {
+/* Tablets */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 72px 16px;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    margin: 0 50px;
+  }
+
+  .project-image-wrapper {
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .project-tech {
+    gap: 6px;
+    margin: 10px 0 16px;
+  }
+
+  .tech-badge {
+    font-size: 0.6rem;
+    padding: 4px 7px;
+  }
+
+  .github-button {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    padding: 10px 14px;
+  }
+
+  .projects-view-more {
+    margin-top: 36px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 56px 14px;
+  }
+
+  .project-card {
+    margin: 0;
+  }
+
+  .project-image-wrapper {
+    height: 160px;
+  }
+
+  .tech-badge {
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+  }
+
+  .github-button,
+  .view-more-button {
+    font-size: 0.6rem;
+    padding: 10px 16px;
+  }
+
+  .projects-view-more {
+    margin-top: 28px;
   }
 }
