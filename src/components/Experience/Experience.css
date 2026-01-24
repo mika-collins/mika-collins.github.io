@@ -240,14 +240,133 @@
   }
 }
 
-
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-  .experience-container {
-    grid-template-columns: 1fr;
+/* Responsive design for small laptops */
+@media (max-width: 1024px) {
+  .experience-section {
+    padding: 96px 20px;
   }
 
+  .experience-container {
+    max-width: 960px;
+    gap: 20px;
+  }
+
+  .bento-card {
+    padding: 24px;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .timeline {
+    padding-left: 32px;
+  }
+
+  .timeline-dot {
+    left: -30px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 72px 16px;
+  }
+
+  .experience-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  /* Reset bento grid layout */
+  .education,
+  .societies,
   .experience {
+    grid-column: 1;
     grid-row: auto;
+    margin: 0 50px;
+  }
+
+  .bento-card {
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .section-icon {
+    font-size: 1.3rem;
+  }
+
+  .mono-meta,
+  .timeline-meta,
+  .society-role {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-dot {
+    left: -24px;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 56px 14px;
+  }
+
+  .education,
+  .societies,
+  .experience {
+    margin: 0;
+  }
+
+  .bento-card {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .section-header {
+    gap: 10px;
+  }
+
+  .section-icon {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-dot {
+    left: -22px;
   }
 }
