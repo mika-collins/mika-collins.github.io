@@ -91,8 +91,10 @@ const Projects = () => {
             }
           >
             {isExpanded
-              ? "View Less"
-              : `View More (${projects.length - visibleCount})`}
+              ? t("projects.viewLess")
+              : t("projects.viewMore", {
+                count: projects.length - visibleCount,
+              })}
           </button>
         </div>
       )}
