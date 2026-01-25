@@ -82,8 +82,8 @@
   height: 2em;
   background-color: #7f7fff;
 
-  mask: url('./typescript.svg') no-repeat center;
-  -webkit-mask: url('./typescript.svg') no-repeat center;
+  mask: url('/typescript.svg') no-repeat center;
+  -webkit-mask: url('/typescript.svg') no-repeat center;
   mask-size: contain;
   -webkit-mask-size: contain;
 

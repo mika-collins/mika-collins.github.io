@@ -13,7 +13,7 @@ const es = {
   about: {
     label: "Misión Control",
     title: "Mika Collins",
-    description: "Soy una estudiante de ingeniería de software con pasión por convertir ideas en aplicaciones funcionales. Me interesa el desarrollo front-end y siempre estoy ansiosa por explorar nuevas oportunidades donde pueda contribuir y seguir aprendiendo.",
+    description: "Soy una estudiante de ingeniería de software con pasión por convertir ideas en aplicaciones funcionales. Me interesa el desarrollo front-end y siempre con ganas de explorar nuevas oportunidades donde pueda contribuir y seguir aprendiendo.",
     location: "Carolina del Norte, EE.UU.",
     actions: {
       primary: "Contáctame",
@@ -121,7 +121,7 @@ const es = {
           description: "Un sitio personal con un tema inspirado en el espacio para mostrar mis habilidades, experiencia y proyectos.",
           image: "/PersonalPortfolio/PersonalPortfolio.png",
           tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "VSCode"],
-          github: "https://github.com/mika-collins",
+          github: "https://github.com/mika-collins/mika-collins.github.io",
           sourceLabel: "Ver Código Fuente",
           disabled: false
         },

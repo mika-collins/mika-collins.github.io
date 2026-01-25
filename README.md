@@ -43,7 +43,7 @@ src/
 - **GA4 Event Tracking**: Resume downloads and social media links are tracked with custom events to understand user behavior. 
 
 ## Credits
-- **Visual Components** - Two visual components (ProfileOrbit and Rocket) are derived from code originally craeted by JkHuger. The original code has been modified and integrated into this project. 
+- **Visual Components** - Two visual components (ProfileOrbit and Rocket) are derived from code originally created by JkHuger. The original code has been modified and integrated into this project. 
 - **Icons** - TypeScript icon provided by [Simple Icons](https://simpleicons.org) and remaining icons provided by [Font Awesome](https://fontawesome.com/)
 - **Libraries** - Open-source libraries include `React`, `i18next`, and others, as detailed in the Technologies section.
 - **AI Assistance** - Portions of the site design and development were assisted by AI to streamline coding and layout descisions. 
