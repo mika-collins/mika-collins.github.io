@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { trackEvent } from "../../analytics";
 
 type Project = {
   title: string;
@@ -71,6 +72,13 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="github-button"
+                onClick={() =>
+                  trackEvent(
+                    "Projects",
+                    "Source Click",
+                    project.title
+                  )
+                }
               >
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 <span>{t(project.sourceLabel)}</span>
@@ -85,11 +93,17 @@ const Projects = () => {
         <div className="projects-view-more">
           <button
             className="view-more-button"
-            onClick={() =>
+            onClick={() => {
+              trackEvent(
+                "Projects",
+                isExpanded ? "View Less" : "View More",
+                "Projects Section"
+              );
+
               setVisibleCount(
                 isExpanded ? INITIAL_VISIBLE : projects.length
-              )
-            }
+              );
+            }}
           >
             {isExpanded
               ? t("projects.viewLess")
