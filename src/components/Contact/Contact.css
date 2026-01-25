@@ -1,0 +1,161 @@
+.contact-section {
+  min-height: 90vh;
+  padding-top: 80px; /
+}
+
+/* Root terminal variables */
+:root {
+  --terminal-green: #4ade80;
+            --terminal-bg: #052e16;
+}
+
+/* Page Layout */
+.contact-section {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Terminal Container */
+.terminal-container {
+  width: 100%;
+  max-width: 700px;
+  background: #111;
+  padding: 15px;
+  border-radius: 20px;
+  border: 8px solid #333;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+/* Terminal Screen */
+.terminal-screen {
+  background: var(--terminal-bg);
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #064e3b;
+  font-family: "Fira Code", monospace;
+  color: var(--terminal-green);
+  text-shadow: 0 0 5px var(--terminal-green);
+  animation: flicker 0.1s infinite;
+
+  /* Fixed height */
+  min-height: 400px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+/* Scanline Effect */
+.terminal-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.1) 50%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.03),
+      rgba(0, 255, 0, 0.01),
+      rgba(0, 0, 255, 0.03)
+    );
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  5% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+/* Header */
+.terminal-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--terminal-green);
+  font-size: 0.8rem;
+}
+
+/* Form */
+.terminal-form {
+  position: relative;
+  z-index: 3;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.terminal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.terminal-form label::before {
+  content: "> ";
+}
+
+/* Inputs */
+.terminal-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--terminal-green);
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+/* Send Button */
+.terminal-btn {
+  background: var(--terminal-green);
+  color: var(--terminal-bg);
+  border: none;
+  padding: 10px 20px;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.terminal-btn:hover {
+  background: #ffffff;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+/* Confirmation Screen */
+.terminal-confirmation {
+  position: relative;
+  z-index: 3;
+  font-family: "Fira Code", monospace;
+  color: var(--terminal-green);
+  text-shadow: 0 0 5px var(--terminal-green);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Blinking cursor */
+.blinking-cursor {
+  display: inline-block;
+  margin-top: 10px;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+

@@ -152,6 +152,30 @@ const en = {
       ],
     },
 
+    contact: {
+      header: "COMMUNICATION MODULE V.2.0 - STATUS: ONLINE",
+      fields: {
+        name: {
+          label: "IDENTIFY_USER",
+          placeholder: "enter_name...",
+        },
+        email: {
+          label: "COMMUNICATION_CHANNEL",
+          placeholder: "enter_email...",
+        },
+        message: {
+          label: "TRANSMIT_MESSAGE",
+          placeholder: "enter_message...",
+        },
+      }, 
+      submit: "SEND_MESSAGE",
+
+      confirmation: {
+        sent: "TRANSMISSION STATUS: SENT",
+        thanks: "THANK YOU FOR REACHING OUT! I WILL GET BACK TO YOU SOON.",
+      }
+    },
+
     // Footer content
     footer: {
         copyright: "© {{year}} Mika Collins. All rights reserved."

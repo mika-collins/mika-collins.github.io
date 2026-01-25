@@ -152,6 +152,30 @@ const es = {
       ],
     },
 
+    contact: {
+      header: "MÓDULO DE COMUNICACIÓN V.2.0 - ESTADO: EN LÍNEA",
+      fields: {
+        name: {
+          label: "IDENTIFICAR_USUARIO",
+          placeholder: "ingresar_nombre...",
+        },
+        email: {
+          label: "CANAL_DE_COMUNICACIÓN",
+          placeholder: "ingresar_correo_electrónico...",
+        },
+        message: {
+          label: "TRANSMITIR_MENSAJE",
+          placeholder: "ingresar_mensaje...",
+        },
+      }, 
+      submit: "ENVIAR_MENSAJE",
+
+      confirmation: {
+        sent: "ESTADO DE TRANSMISIÓN: ENVIADO",
+        thanks: "GRACIAS POR CONTACTARME! ME PONDRÉ EN CONTACTO CONTIGO PRONTO.",
+      }
+    },
+
     // Footer content
     footer: {
         copyright: "© {{year}} Mika Collins. Todos los derechos reservados."
