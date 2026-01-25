@@ -32,6 +32,7 @@ const Projects = () => {
 
   return (
     <section className="projects-section" id="projects">
+      <h2 className="section-title">{t("projects.title")}</h2>
       <div className="projects-container">
         {projects.slice(0, visibleCount).map((project, index) => (
           <div className="bento-card project-card" key={index}>

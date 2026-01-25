@@ -58,7 +58,9 @@ const Contact = () => {
   }, [sent, currentLine, isTypingComplete]); 
 
   return (
+    
     <section className="contact-section">
+      <h2 className="section-title">{t("contact.title")}</h2>
       <div className="terminal-container">
         <div className="terminal-screen">
           {!sent ? (

@@ -1,6 +1,14 @@
 .experience-section {
   width: 100%;
-  padding: 120px 24px;
+  padding: 50px 24px 0 24px;
+}
+
+.experience-section .section-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
 }
 
 .experience-container {

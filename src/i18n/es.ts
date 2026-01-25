@@ -33,6 +33,9 @@ const es = {
 
   // Experience section
     experience: {
+      title: "Registro de Experiencia",
+
+      // Education subsection
       education: {
         label: "Educación",
         degree: "B.S. Ingeniería de Software",
@@ -50,6 +53,7 @@ const es = {
         ]
       },
       
+      // Work Experience subsection
       work: {
         label: "Experiencia Relevante",
         positions: [
@@ -71,6 +75,7 @@ const es = {
         ]
       },
       
+      // Campus Involvement subsection
       societies: {
         label: "Participación en el Campus",
         list: [
@@ -96,6 +101,7 @@ const es = {
 
     // Projects section
     projects: {
+      title: "Mis Proyectos",
       viewLess: "Ver Menos",
       viewMore: "Ver Más ({{count}})",
       list: [
@@ -153,6 +159,7 @@ const es = {
     },
 
     contact: {
+      title: "Contáctame",
       header: "MÓDULO DE COMUNICACIÓN V.2.0 - ESTADO: EN LÍNEA",
       fields: {
         name: {

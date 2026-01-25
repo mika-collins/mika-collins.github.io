@@ -21,7 +21,7 @@ const en = {
     },
   },
 
-    // Technologies section
+  // Technologies section
   technologies: {
     title: "My Tech Stack",
     categories: {
@@ -33,6 +33,9 @@ const en = {
 
     // Experience section
     experience: {
+      title: "Experience Log",
+
+      // Education subsection
       education: {
         label: "Education",
         degree: "B.S. Software Engineering",
@@ -50,6 +53,7 @@ const en = {
         ]
       },
       
+      // Work Experience subsection
       work: {
         label: "Relevant Experience",
         positions: [
@@ -71,6 +75,7 @@ const en = {
         ]
       },
       
+      // Campus Involvement subsection
       societies: {
         label: "Campus Involvement",
         list: [
@@ -96,6 +101,7 @@ const en = {
 
     // Projects section
     projects: {
+      title: "My Projects",
       viewLess: "View Less",
       viewMore: "View More ({{count}})",
       list: [
@@ -153,6 +159,7 @@ const en = {
     },
 
     contact: {
+      title: "Contact Me",
       header: "COMMUNICATION MODULE V.2.0 - STATUS: ONLINE",
       fields: {
         name: {

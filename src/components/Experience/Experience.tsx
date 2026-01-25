@@ -9,8 +9,8 @@ const Experience = () => {
 
   return (
     <section className="experience-section" id="experience">
+      <h2 className="section-title">{t("experience.title")}</h2>
       <div className="experience-container">
-
         {/* Education */}
         <div className="bento-card education">
           <div className="section-header">
