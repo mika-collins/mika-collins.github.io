@@ -11,6 +11,7 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 - **i18next** - For multi-language support (en/es)
 - **Font Awesome & Simple Icons** - For icons
 - **Google Analytics 4 (GA4)** - For tracking user interactions 
+- **EmailJS** - For handling contact form submissions directly to email
 - **GitHub Pages** - For free hosting of the site
 
 ## Project Structure
@@ -18,6 +19,7 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 src/
 ├── components/          # Page Sections
 │   ├── AboutMe/
+│   ├── Contact/
 │   ├── Experience/
 │   ├── Footer/
 │   ├── Navbar/
