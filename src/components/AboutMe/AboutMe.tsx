@@ -3,9 +3,12 @@ import ProfileOrbit from "../Visuals/ProfileOrbit/ProfileOrbit";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router";
 
 const AboutMe = () => {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
 
   const handleResumeClick = () => {
     // Trigger resume download
@@ -46,7 +49,9 @@ const AboutMe = () => {
 
           {/* Primary (Contact) button */}
           <div className="about-actions">
-            <button>{t("about.actions.primary")}</button>
+            <button onClick={() => navigate("/contact")}>
+              {t("about.actions.primary")}
+            </button>
 
             {/* Secondary (Resume) button */}
             <button onClick={handleResumeClick}>

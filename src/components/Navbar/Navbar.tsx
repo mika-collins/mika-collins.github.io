@@ -3,9 +3,12 @@ import "./Navbar.css";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleLanguage = () => {
     const newLang = i18n.language === "en" ? "es" : "en";
@@ -20,14 +23,26 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      // Auto scroll if on homepage
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // Navigate to homepage if one different page
+      navigate("/");
+      // Auto scroll after navigation
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 50);
+    }
+  };
+
   return (
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="navbar-content">
         <div
           className="navbar-logo-container"
-          onClick={() =>
-            window.scrollTo({ top: 0, behavior: "smooth" })
-          }
+          onClick={handleLogoClick}
         >
           <FontAwesomeIcon icon={faRocket} className="navbar-icon" />
           <div className="navbar-logo">{t("site.name")}</div>
@@ -42,5 +57,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
