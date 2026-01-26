@@ -60,7 +60,7 @@ const en = {
           {
             title: "Research Assistant",
             company: "UNCW Computer Science Department · Jan 2026-Present",
-            description: "Investigated agentic software engineering by building an automated framework using SWE-bench to analyze how autonomous AI agents solve real GitHub issues, focusing on robustness, security, and integrity of the agent's behavior."
+            description: "Investigating agentic software engineering by building an automated framework using SWE-bench to analyze how autonomous AI agents solve real GitHub issues, focusing on robustness, security, and integrity of the agent's behavior."
           },
           {
             title: "Teaching Assistant",
@@ -110,7 +110,7 @@ const en = {
           timeframe: "December 2025 - Present",
           description: "A website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and various featured projects.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "HTML/CSS", "Node.js", "VSCode"],
+          tech: ["Javascript", "React", "HTML/CSS", "Node.js"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
@@ -118,10 +118,10 @@ const en = {
         {
           title: "Portfolio Site",
           timeframe: "December 2025 - January 2026",
-          description: "A personal site with a space inspired theme to showcase my skills, experience, and projects.",
+          description: "My responsive portfolio website to feature my skills, experience, and projects. Integrated with multi-language support and GA4 to track user engagement.",
           image: "/PersonalPortfolio/PersonalPortfolio.png",
-          tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "VSCode"],
-          github: "https://github.com/mika-collins",
+          tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "EmailJS", "GA4", "i18next"],
+          github: "https://github.com/mika-collins/mika-collins.github.io",
           sourceLabel: "View Source Code",
           disabled: false
         },
@@ -130,8 +130,8 @@ const en = {
           timeframe: "August 2025 - December 2025",
           description: "A web application that visualizes real-time room occupancy by scanning WiFi signals via Raspberry Pis and displays the data as a dynamic heatmap.",
           image: "/Heatmap/HeatmapLogin.png",
-          tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "VSCode"],
-          github: "https://github.com/mika-collins",
+          tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "PlayWright"],
+          github: "https://github.com/mika-collins/seng401-project-mawc",
           sourceLabel: "View Source Code",
           disabled: false
         },
@@ -150,7 +150,7 @@ const en = {
           timeframe: "August 2025 - October 2025",
           description: "A mock website for a Halloween store built through a series of labs for a client-side web development course.",
           image: "/HalloweenStore/HalloweenStore.png",
-          tech: ["HTML/CSS", "VSCode"],
+          tech: ["HTML/CSS"],
           github: "https://github.com/mika-collins/SENG-365-Halloween-Website",
           sourceLabel: "View Source Code",
           disabled: false

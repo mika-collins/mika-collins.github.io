@@ -60,7 +60,7 @@ const es = {
           {
             title: "Asistente de Investigación",
             company: "Departamento de Ciencias de la Computación de UNCW · Ene 2026-Presente",
-            description: "Investigué la ingeniería de software agéntica construyendo un marco automatizado usando SWE-bench para analizar cómo los agentes de IA autónomos resuelven problemas reales de GitHub, enfocándome en la robustez, seguridad e integridad del comportamiento del agente."
+            description: "Investigando la ingeniería de software agéntica construyendo un marco automatizado usando SWE-bench para analizar cómo los agentes de IA autónomos resuelven problemas reales de GitHub, enfocándome en la robustez, seguridad e integridad del comportamiento del agente."
           },
           {
             title: "Asistente de Enseñanza",
@@ -110,7 +110,7 @@ const es = {
           timeframe: "Diciembre 2025 - Presente",
           description: "Un sitio web creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y varios proyectos destacados.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "HTML/CSS", "Node.js", "VSCode"],
+          tech: ["Javascript", "React", "HTML/CSS", "Node.js"],
           github: "https://github.com/mika-collins",
           sourceLabel: "En Desarrollo",
           disabled: true
@@ -118,9 +118,9 @@ const es = {
         {
           title: "Sitio de Portafolio",
           timeframe: "Diciembre 2025 - Enero 2026",
-          description: "Un sitio personal con un tema inspirado en el espacio para mostrar mis habilidades, experiencia y proyectos.",
+          description: "Mi portafolio web con diseño adaptable para exhibir mis habilidades, experiencia y proyectos. Cuenta con soporte multilingüe e integración con GA4 para analizar la interacción de los usuarios.",
           image: "/PersonalPortfolio/PersonalPortfolio.png",
-          tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "VSCode"],
+          tech: ["TypeScript", "React", "HTML/CSS", "Node.js", "EmailJS", "GA4", "i18next"],
           github: "https://github.com/mika-collins/mika-collins.github.io",
           sourceLabel: "Ver Código Fuente",
           disabled: false
@@ -130,8 +130,8 @@ const es = {
           timeframe: "Agosto 2025 - Diciembre 2025",
           description: "Una aplicación web que visualiza la ocupación de habitaciones en tiempo real escaneando señales WiFi a través de Raspberry Pis y muestra los datos como un mapa de calor dinámico.",
           image: "/Heatmap/HeatmapLogin.png",
-          tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "VSCode"],
-          github: "https://github.com/mika-collins",
+          tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "PlayWright"],
+          github: "https://github.com/mika-collins/seng401-project-mawc",
           sourceLabel: "Ver Código Fuente",
           disabled: false
         },
@@ -150,7 +150,7 @@ const es = {
           timeframe: "Agosto 2025 - Octubre 2025",
           description: "Un sitio web simulado para una tienda de Halloween construido a través de una serie de laboratorios para un curso de desarrollo web del lado del cliente.",
           image: "/HalloweenStore/HalloweenStore.png",
-          tech: ["HTML/CSS", "VSCode"],
+          tech: ["HTML/CSS"],
           github: "https://github.com/mika-collins/SENG-365-Halloween-Website",
           sourceLabel: "Ver Código Fuente",
           disabled: false
