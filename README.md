@@ -10,18 +10,18 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 - **CSS** - Styling, animations, and responsive design
 - **i18next** - Internationalization support (en/es)
 - **Font Awesome & Simple Icons** - Icons for social links and features
-- **Google Analytics 4 (GA4)** - Tracks user interactions and engagement
+- **Google Analytics 4 (GA4)** - Web analytics
 - **EmailJS** - Handles contact form submissions directly via email
 - **GitHub Pages** - Free hosting and deployment of site
 
 ## 💫 Features:
 - Responsive design
-- Social links
-- Terminal style contact form
+- Social media links
+- Terminal-style contact form
 - Resume download
 - Project gallery with source code links
 - Analytics tracking
-- Multi-language support (en/es)
+- Multi-language support (English/Spanish)
 
 ## 📂 Project Structure:
 This project is structured to keep components modular and organized:
@@ -53,8 +53,16 @@ src/
 └── main.tsx                # Entry point
 ```
 
-## Credits:
-- **Visual Components** - Two visual components (ProfileOrbit and Rocket) are derived from code originally created by JkHuger. The original code has been modified and integrated into this project. 
-- **Icons** - TypeScript icon provided by [Simple Icons](https://simpleicons.org) and remaining icons provided by [Font Awesome](https://fontawesome.com/)
-- **Libraries** - Open-source libraries include `React`, `i18next`, and others, as detailed in the Technologies section.
-- **AI Assistance** - Portions of the site design and development were assisted by AI to streamline coding and layout decisions. 
+### Disclosure
+
+This site collects limited data to help improve content and allow users to contact me. It uses Google Analytics 4 (GA4), a web analytics service provided by Google, to collect aggregated, non-identifying usage data such as page views, interaction events (scrolls and button clicks), approximate location (city level), and time spent on pages. This data is used to understand site engagement and improve content design. The site also uses EmailJS to deliver messages submitted through the contact form. When a form is submitted, the user's name, email address, and message are transmitted to EmailJS servers solely to deliver the message. The site owner, myself, does not collect or store personally identifiable information from analytics data or contact form submissions.
+
+#### Credits:
+
+<sub>
+    <b>Visual Components</b> - Two visual components (ProfileOrbit and Rocket) are derived from code originally created by JkHuger. The original code has been modified and integrated into this project.<br>
+    <b>Icons</b> - TypeScript icon provided by  <a href="https://simpleicons.org">Simple Icons</a> and remaining icons provided by <a href="https://fontawesome.com/">Font Awesome</a>.<br>
+    <b>Libraries</b> - Open-source libraries include 'React;, 'i18next', and others, as detailed in the Technologies section.<br>
+    <b>AI Assistance</b> - Portions of the site design and development were assisted by AI to streamline coding and layout decisions.<br>
+</sub>
+
