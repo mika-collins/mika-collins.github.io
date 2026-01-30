@@ -129,7 +129,7 @@ const es = {
           title: "The Floor is Lava",
           timeframe: "Agosto 2025 - Diciembre 2025",
           description: "Una aplicación web que visualiza la ocupación de habitaciones en tiempo real escaneando señales WiFi a través de Raspberry Pis y muestra los datos como un mapa de calor dinámico.",
-          image: "/Heatmap/HeatmapLogin.png",
+          image: "/Heatmap/HeatmapTutorial.png",
           tech: ["Python", "Javascript", "Vue.js", "HTML/CSS", "Node.js", "Raspberry Pi", "PostgreSQL", "Fly.io", "PlayWright"],
           github: "https://github.com/mika-collins/seng401-project-mawc",
           sourceLabel: "Ver Código Fuente",

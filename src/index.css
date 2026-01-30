@@ -20,6 +20,18 @@ html, body, #root {
   );
 }
 
+/* Remove scrollbars */
+html, body {
+  overflow-y: auto;
+  scrollbar-width: none;     
+  -ms-overflow-style: none;   
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;              
+}
+
 /* Star layer */
 .stars {
   position: fixed;
