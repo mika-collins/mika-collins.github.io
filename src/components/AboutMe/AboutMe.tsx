@@ -7,15 +7,21 @@ import { useNavigate } from "react-router";
 import { trackEvent } from "../../analytics";
 
 const AboutMe = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
   const handleResumeClick = () => {
     trackEvent("Resume", "Download", "About Resume Button");
 
+    // Determine file based on current language
+    const isSpanish = i18n.language === "es";
+    const fileName = isSpanish
+      ? "Collins, Mika Resume - ES.pdf" // update with spanish version when added
+      : "Collins, Mika Resume.pdf";
+
     const link = document.createElement("a");
-    link.href = "/Collins, Mika Resume.pdf";
-    link.download = "Collins, Mika Resume.pdf";
+    link.href = `/${fileName}`; 
+    link.download = fileName; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
