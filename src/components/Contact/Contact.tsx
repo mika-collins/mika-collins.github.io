@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
+// Typing animation settings
 const TYPING_SPEED = 50; 
 const LINE_DELAY = 500; 
 
@@ -19,6 +20,7 @@ const Contact = () => {
     company: "", // Honeypot field
   });
 
+  // Handle form submissions
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
@@ -28,6 +30,7 @@ const Contact = () => {
     return;
   }
 
+  // Send email via EmailJS
   try {
     await emailjs.send(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -44,12 +47,15 @@ const Contact = () => {
     setSent(true);
     setDisplayedLines([]);
     setCurrentLine(0);
+  
+  // Catch and log any errors with submission
   } catch (error) {
     console.error("EmailJS error:", error);
     alert("Failed to send message. Please try again.");
   }
 };
 
+  // Handle input changes
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -59,6 +65,7 @@ const Contact = () => {
     }));
   };
 
+  // Submission confirmation messages
   const confirmationLines = [
     `> ${t("contact.confirmation.sent")}`,
     `> ${t("contact.confirmation.thanks")}`,
@@ -80,6 +87,7 @@ const Contact = () => {
     
     let typedLine = "";
 
+    // Typing effect for each line
     const typeInterval = setInterval(() => {
       typedLine += line[charIndex];
       setDisplayedLines(prev => {
@@ -89,6 +97,7 @@ const Contact = () => {
       });
       charIndex++;
       
+      // When line is fully typed, move to next line after a delay
       if (charIndex >= line.length) {
         clearInterval(typeInterval);
         setTimeout(() => setCurrentLine(prev => prev + 1), LINE_DELAY);
@@ -111,6 +120,8 @@ const Contact = () => {
               </div>
 
               <form className="terminal-form" onSubmit={handleSubmit}>
+                
+                {/* Name field */}
                 <div className="input-group">
                   <label>{t("contact.fields.name.label")}</label>
                   <input
@@ -123,7 +134,8 @@ const Contact = () => {
                     required
                   />
                 </div>
-
+                
+                {/* Email field */}
                 <div className="input-group">
                   <label>{t("contact.fields.email.label")}</label>
                   <input
@@ -137,6 +149,7 @@ const Contact = () => {
                   />
                 </div>
 
+                {/* Message field */}
                 <div className="input-group">
                   <label>{t("contact.fields.message.label")}</label>
                   <textarea
@@ -161,13 +174,14 @@ const Contact = () => {
                   autoComplete="off"
                 />
 
+                {/* Submit button */}
                 <button type="submit" className="terminal-btn">
                   {t("contact.submit")}
                 </button>
               </form>
             </>
           ) : (
-            <div className="terminal-confirmation">
+            <div className="terminal-confirmation"> {/* Confirmation message */}
               {displayedLines.map((line, idx) => (
                 <p key={idx}>{line}</p>
               ))}

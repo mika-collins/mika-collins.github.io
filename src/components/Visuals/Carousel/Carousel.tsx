@@ -1,12 +1,14 @@
 import { useRef, useState, useLayoutEffect } from "react";
 import "./Carousel.css";
 
+// Props for Carousel component
 interface CarouselProps {
   items: string[];
   direction?: "left" | "right";
   baseSpeed?: number;
 }
 
+// Carousel component for cycling items
 const Carousel = ({
   items,
   direction = "left",
@@ -15,6 +17,7 @@ const Carousel = ({
   const trackRef = useRef<HTMLDivElement>(null);
   const [duration, setDuration] = useState(0); // Start at 0 to prevent initial jump
 
+  // Calculate duration based on content width and base speed
   useLayoutEffect(() => {
     const calculateDuration = () => {
       if (!trackRef.current) return;

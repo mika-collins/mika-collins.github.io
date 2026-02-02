@@ -11,6 +11,7 @@ const Experience = () => {
     <section className="experience-section" id="experience">
       <h2 className="section-title">{t("experience.title")}</h2>
       <div className="experience-container">
+        
         {/* Education */}
         <div className="bento-card education">
           <div className="section-header">
@@ -24,7 +25,7 @@ const Experience = () => {
           <p className="card-description">{t("experience.education.courseworkTitle")}</p>
 
 
-          {/* Relevant Coursework */}
+          {/* Relevant Coursework  Carousel */}
           <Carousel
             direction="left"
             items={[
@@ -89,7 +90,7 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Societies */}
+        {/* Campus Involvement */}
         <div className="bento-card societies">
           <div className="section-header">
             <FontAwesomeIcon icon={faSatellite} className="section-icon" />

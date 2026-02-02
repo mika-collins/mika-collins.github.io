@@ -37,6 +37,7 @@ const Projects = () => {
       <div className="projects-container">
         {projects.slice(0, visibleCount).map((project, index) => (
           <div className="bento-card project-card" key={index}>
+            
             {/* Image */}
             <div className="project-image-wrapper">
               <img
@@ -60,7 +61,7 @@ const Projects = () => {
               ))}
             </div>
 
-            {/* GitHub / Source button */}
+            {/* GitHub / Source code button */}
             {project.disabled ? (
               <button className="github-button disabled" disabled>
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />

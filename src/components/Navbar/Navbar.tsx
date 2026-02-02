@@ -10,6 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Toggle language between English and Spanish
   const toggleLanguage = () => {
     const newLang = i18n.language === "en" ? "es" : "en";
     i18n.changeLanguage(newLang);
@@ -27,9 +28,11 @@ const Navbar = () => {
     if (location.pathname === "/") {
       // Auto scroll if on homepage
       window.scrollTo({ top: 0, behavior: "smooth" });
+    
     } else {
       // Navigate to homepage if one different page
       navigate("/");
+      
       // Auto scroll after navigation
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -48,6 +51,7 @@ const Navbar = () => {
           <div className="navbar-logo">{t("site.name")}</div>
         </div>
 
+        {/* Language toggle button */}
         <button className="navbar-translate" onClick={toggleLanguage}>
           [ {i18n.language.toUpperCase()} ] {t("common.translate")}
         </button>

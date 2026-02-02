@@ -35,14 +35,19 @@ const AboutMe = () => {
         </div>
 
         <div className="about-content">
+
+          {/* About section eyebrow */}
           <span className="about-label">
             {t("about.label")}
           </span>
 
+          {/* Name title */}
           <h2>{t("about.title")}</h2>
 
+          {/* Description */}
           <p>{t("about.description")}</p>
 
+          {/* Location icon and text */}
           <p className="about-location">
             <FontAwesomeIcon
               icon={faLocationDot}

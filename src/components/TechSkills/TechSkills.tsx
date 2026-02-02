@@ -71,6 +71,7 @@ const Technologies = () => {
                   </div>
                 ))}
 
+                {/* Custom addition for TypeScript (does not exist in fontawesome) */}
                 {category.key === "frontend" && (
                   <div className="tech-item">
                     {/* Shadow wrapper */}
