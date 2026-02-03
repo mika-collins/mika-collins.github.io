@@ -13,7 +13,7 @@ const es = {
   about: {
     label: "Misión Control",
     title: "Mika Collins",
-    description: "Soy una estudiante de ingeniería de software con pasión por convertir ideas en aplicaciones funcionales. Me interesa el desarrollo front-end y siempre con ganas de explorar nuevas oportunidades donde pueda contribuir y seguir aprendiendo.",
+    description: "Soy una estudiante de Ingeniería de Software con pasión por enfrentar problemas desafiantes, aprender nuevas tecnologías y esforzarme continuamente para crecer como ingeniera. Estoy ansiosa por explorar nuevas oportunidades donde pueda contribuir y seguir mejorando.",
     location: "Carolina del Norte, EE.UU.",
     actions: {
       primary: "Contáctame",

@@ -16,7 +16,7 @@ const AboutMe = () => {
     // Determine file based on current language
     const isSpanish = i18n.language === "es";
     const fileName = isSpanish
-      ? "Collins, Mika Resume - ES.pdf" // update with spanish version when added
+      ? "Collins, Mika Resume.pdf" // Update with spanish version when added
       : "Collins, Mika Resume.pdf";
 
     const link = document.createElement("a");
