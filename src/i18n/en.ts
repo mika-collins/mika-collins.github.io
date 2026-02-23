@@ -58,6 +58,11 @@ const en = {
         label: "Relevant Experience",
         positions: [
           {
+            title: "Software Engineering Fellowship",
+            company: "Kittelson & Associates · Feb 2026-Present",
+            description: "Designing and developing new modules and interface enhancements for Kittelson's wzKIT\u2122 platform, collaborating with industry engineers in sprints to improve data-driven analysis of work zone safety, mobility impacts, and real-time roadway planning."
+          },
+          {
             title: "Research Assistant",
             company: "UNCW Computer Science Department · Jan 2026-Present",
             description: "Investigating agentic software engineering by building an automated framework using SWE-bench to analyze how autonomous AI agents solve real GitHub issues, focusing on robustness, security, and integrity of the agent's behavior."

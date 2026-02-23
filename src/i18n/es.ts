@@ -58,6 +58,11 @@ const es = {
         label: "Experiencia Relevante",
         positions: [
           {
+            title: "Software Engineering Fellowship",
+            company: "Kittelson & Associates · Feb 2026-Presente",
+            description: "Diseñando y desarrollando nuevos módulos y mejoras de interfaz para la plataforma wzKIT\u2122 de Kittelson, colaborando con ingenieros industriales en sprints para mejorar el análisis basado en datos de seguridad de zonas de trabajo, impactos de movilidad y planificación vial en tiempo real."
+          },
+          {
             title: "Asistente de Investigación",
             company: "Departamento de Ciencias de la Computación de UNCW · Ene 2026-Presente",
             description: "Investigando la ingeniería de software agéntica construyendo un marco automatizado usando SWE-bench para analizar cómo los agentes de IA autónomos resuelven problemas reales de GitHub, enfocándome en la robustez, seguridad e integridad del comportamiento del agente."

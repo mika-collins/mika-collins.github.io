@@ -64,7 +64,8 @@ const Experience = () => {
                 </p>
               </div>
             </div>
-
+            
+            {/* Comment out research position for now, may add back later if continued
             <div className="timeline-item">
               <span className="timeline-dot" />
               <div className="timeline-content">
@@ -75,7 +76,7 @@ const Experience = () => {
                 </p>
               </div>
             </div>
-
+            */}
             <div className="timeline-item">
               <span className="timeline-dot" />
               <div className="timeline-content">
@@ -83,6 +84,17 @@ const Experience = () => {
                 <p className="timeline-meta">{t("experience.work.positions.2.company")}</p>
                 <p className="card-description">
                   {t("experience.work.positions.2.description")}
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <span className="timeline-dot" />
+              <div className="timeline-content">
+                <h4 className="timeline-title">{t("experience.work.positions.3.title")}</h4>
+                <p className="timeline-meta">{t("experience.work.positions.3.company")}</p>
+                <p className="card-description">
+                  {t("experience.work.positions.3.description")}
                 </p>
               </div>
             </div>
