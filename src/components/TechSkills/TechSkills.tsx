@@ -11,7 +11,6 @@ import {
   faReact,
   faVuejs,
   faGitAlt,
-  faDocker,
   faPhp,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
@@ -42,7 +41,6 @@ const technologies = [
     key: "tools",
     iconItems: [
       { icon: faGitAlt, label: "Git" },
-      { icon: faDocker, label: "Docker" },
       { icon: faFigma, label: "Figma" },
       { icon: faTasks, label: "Agile/Scrum" },
       { icon: faVial, label: "Testing" },
