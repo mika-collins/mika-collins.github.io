@@ -53,6 +53,27 @@ src/
 └── main.tsx                # Entry point
 ```
 
+## Instructions for Development:
+To make and view changes within the development environment:
+```
+npm run dev
+````
+
+Steps to deploy changes to the published website:
+1. Ensure that all code changes are pushed to github
+```
+git status
+git add .
+git commit -m "Message here"
+git push
+```
+
+2. Deploy the changes to the website:
+```
+npm run build
+npm run deploy
+```
+
 ### Disclosure
 
 This site collects limited data to help improve content and allow users to contact me. It uses Google Analytics 4 (GA4), a web analytics service provided by Google, to collect aggregated, non-identifying usage data such as page views, interaction events (scrolls and button clicks), approximate location (city level), and time spent on pages. This data is used to understand site engagement and improve content design. The site also uses EmailJS to deliver messages submitted through the contact form. When a form is submitted, the user's name, email address, and message are transmitted to EmailJS servers solely to deliver the message. The site owner, myself, does not collect or store personally identifiable information from analytics data or contact form submissions.
