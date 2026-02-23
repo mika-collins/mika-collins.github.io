@@ -58,7 +58,7 @@ const es = {
         label: "Experiencia Relevante",
         positions: [
           {
-            title: "Software Engineering Fellowship",
+            title: "Beca de Ingeniería de Software",
             company: "Kittelson & Associates · Feb 2026-Presente",
             description: "Diseñando y desarrollando nuevos módulos y mejoras de interfaz para la plataforma wzKIT\u2122 de Kittelson, colaborando con ingenieros industriales en sprints para mejorar el análisis basado en datos de seguridad de zonas de trabajo, impactos de movilidad y planificación vial en tiempo real."
           },
