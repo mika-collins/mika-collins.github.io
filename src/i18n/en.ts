@@ -112,7 +112,7 @@ const en = {
       list: [
         {
           title: "Apache Grails Open Source Contribution",
-          timeframe: "February 2026 - Present",
+          timeframe: "March 2026 - Present",
           description: "Contributed to the Apache Grails framework by resolving documentation publishing inconsistencies. Implemented logic to exclude broken page fragments, improving build reliability for the official Grails user guide and closing issue #14986.",
           image: "/ApacheGrails/MergedPR.png",
           tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
