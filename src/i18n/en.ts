@@ -111,6 +111,16 @@ const en = {
       viewMore: "View More ({{count}})",
       list: [
         {
+          title: "Apache Grails Open Source Contribution",
+          timeframe: "February 2026 - Present",
+          description: "Contributed to the Apache Grails framework by resolving documentation publishing inconsistencies. Implemented logic to exclude broken page fragments, improving build reliability for the official Grails user guide and closing issue #14986.",
+          image: "/ApacheGrails/MergedPR.png",
+          tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
+          github: "https://github.com/apache/grails-core/pull/15477",
+          sourceLabel: "View Pull Request",
+          disabled: false
+        },
+        {
           title: "SFTB Enterprises Website",
           timeframe: "December 2025 - Present",
           description: "A website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and various featured projects.",

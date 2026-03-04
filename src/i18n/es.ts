@@ -111,6 +111,16 @@ const es = {
       viewMore: "Ver Más ({{count}})",
       list: [
         {
+          title: "Contribución de Código Abierto a Apache Grails",
+          timeframe: "Febrero 2026 - Presente",
+          description: "Contribuí al framework de Apache Grails resolviendo inconsistencias en la publicación de documentación. Implementé lógica para excluir fragmentos de página rotos, mejorando la confiabilidad de la construcción para la guía oficial de usuarios de Grails y cerrando el issue #14986.",
+          image: "/ApacheGrails/MergedPR.png",
+          tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
+          github: "https://github.com/apache/grails-core/pull/15477",
+          sourceLabel: "Ver Pull Request",
+          disabled: false
+        },
+        {
           title: "Sitio web de SFTB Enterprises",
           timeframe: "Diciembre 2025 - Presente",
           description: "Un sitio web creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y varios proyectos destacados.",
