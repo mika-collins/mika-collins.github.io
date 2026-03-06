@@ -113,7 +113,7 @@ const es = {
         {
           title: "Contribución de Código Abierto a Apache Grails",
           timeframe: "Marzo 2026 - Presente",
-          description: "Contribuí al framework de Apache Grails resolviendo inconsistencias en la publicación de documentación. Implementé lógica para excluir fragmentos de página rotos, mejorando la confiabilidad de la construcción para la guía oficial de usuarios de Grails y cerrando el issue #14986.",
+          description: "Contribuí al framework de Apache Grails resolviendo inconsistencias en la publicación de la documentación. Implementé lógica para excluir fragmentos rotos de la página, mejorando la fiabilidad de la construcción para la guía oficial de usuarios de Grails y cerrando el issue #14986.",
           image: "/ApacheGrails/MergedPR.png",
           tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
           github: "https://github.com/apache/grails-core/pull/15477",
