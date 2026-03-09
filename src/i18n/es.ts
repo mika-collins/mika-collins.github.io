@@ -111,21 +111,21 @@ const es = {
       viewMore: "Ver Más ({{count}})",
       list: [
         {
-          title: "Contribución de Código Abierto a Apache Grails",
+          title: "Colaboradora de Código Abierto a Apache Grails",
           timeframe: "Marzo 2026 - Presente",
-          description: "Contribuí al framework de Apache Grails resolviendo inconsistencias en la publicación de documentación. Implementé lógica para excluir fragmentos de página rotos, mejorando la confiabilidad de la construcción para la guía oficial de usuarios de Grails y cerrando el issue #14986.",
+          description: "Contribuí al framework de Apache Grails resolviendo inconsistencias en la publicación de documentación y mejorando la confiabilidad de la construcción para la guía oficial de usuarios de Grails. También contribuí con mejoras al tooling de construcción y al flujo de trabajo de CI para mejorar el informe de estilo de código en GitHub Actions.",
           image: "/ApacheGrails/MergedPR.png",
           tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
-          github: "https://github.com/apache/grails-core/pull/15477",
-          sourceLabel: "Ver Pull Request",
+          github: "https://github.com/apache/grails-core/pulls?q=is%3Apr+author%3Amika-collins",
+          sourceLabel: "Ver Contribuciones",
           disabled: false
         },
         {
           title: "Sitio web de SFTB Enterprises",
           timeframe: "Diciembre 2025 - Presente",
-          description: "Un sitio web creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y varios proyectos destacados.",
+          description: "Un sitio web moderno creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y los proyectos destacados a través de una interfaz basada en React responsive.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "HTML/CSS", "Node.js"],
+          tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
           github: "https://github.com/mika-collins",
           sourceLabel: "En Desarrollo",
           disabled: true

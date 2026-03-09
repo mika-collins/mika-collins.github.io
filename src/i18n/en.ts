@@ -111,21 +111,21 @@ const en = {
       viewMore: "View More ({{count}})",
       list: [
         {
-          title: "Apache Grails Open Source Contribution",
+          title: "Apache Grails Open Source Contributor",
           timeframe: "March 2026 - Present",
-          description: "Contributed to the Apache Grails framework by resolving documentation publishing inconsistencies. Implemented logic to exclude broken page fragments, improving build reliability for the official Grails user guide and closing issue #14986.",
+          description: "Contributed to the Apache Grails framework by resolving documentation publishing inconsistencies and improving build reliability for the official Grails user guide. Also contributed improvements to Grails' build tooling and CI workflow to improve code style reporting in GitHub Actions.",
           image: "/ApacheGrails/MergedPR.png",
           tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
-          github: "https://github.com/apache/grails-core/pull/15477",
-          sourceLabel: "View Pull Request",
+          github: "https://github.com/apache/grails-core/pulls?q=is%3Apr+author%3Amika-collins",
+          sourceLabel: "View Contributions",
           disabled: false
         },
         {
           title: "SFTB Enterprises Website",
           timeframe: "December 2025 - Present",
-          description: "A website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and various featured projects.",
+          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive React-based interface.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "HTML/CSS", "Node.js"],
+          tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
