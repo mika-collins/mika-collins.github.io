@@ -4,6 +4,14 @@
   width: 100%;
   max-width: 100%;
   margin-top: 12px;
+ 
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
   mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -12,28 +20,35 @@
     transparent 100%
   );
 }
-
+ 
 .pill-track {
   display: flex;
   gap: 12px;
-  padding-right: 12px; 
+  padding-right: 12px;
   width: max-content;
   flex-wrap: nowrap;
-  
   animation: scroll var(--duration, 30s) linear infinite;
-  
-  transform: translate3d(0, 0, 0);
+  animation-play-state: paused;
+}
+ 
+.pill-track.is-visible {
+  animation-play-state: running;
   will-change: transform;
 }
-
+ 
 .pill-track.left {
   animation-direction: normal;
 }
-
+ 
 .pill-track.right {
   animation-direction: reverse;
 }
-
+ 
+/* Pause on hover */
+.pill-carousel:hover .pill-track {
+  animation-play-state: paused;
+}
+ 
 .pill {
   padding: 6px 14px;
   border-radius: 999px;
@@ -45,15 +60,9 @@
   background: rgba(127, 127, 255, 0.12);
   border: 1px solid rgba(127, 127, 255, 0.25);
   white-space: nowrap;
-  user-select: none; 
+  user-select: none;
 }
-
-/* Pause on hover */
-.pill-carousel:hover .pill-track {
-  animation-play-state: paused;
-}
-
-/* Animations */
+ 
 @keyframes scroll {
   0% {
     transform: translate3d(0, 0, 0);
@@ -62,4 +71,3 @@
     transform: translate3d(-50%, 0, 0);
   }
 }
-
