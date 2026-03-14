@@ -1,67 +1,49 @@
-import { useRef, useState, useLayoutEffect, useEffect } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 import "./Carousel.css";
- 
+
+// Props for Carousel component
 interface CarouselProps {
   items: string[];
   direction?: "left" | "right";
   baseSpeed?: number;
 }
- 
+
+// Carousel component for cycling items
 const Carousel = ({
   items,
   direction = "left",
   baseSpeed = 40,
 }: CarouselProps) => {
   const trackRef = useRef<HTMLDivElement>(null);
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const [duration, setDuration] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
- 
+  const [duration, setDuration] = useState(0); // Start at 0 to prevent initial jump
+
   // Calculate duration based on content width and base speed
   useLayoutEffect(() => {
-    let cancelled = false;
- 
     const calculateDuration = () => {
-      if (!trackRef.current || cancelled) return;
+      if (!trackRef.current) return;
       const scrollWidth = trackRef.current.scrollWidth;
       const trackWidth = scrollWidth / 2;
       const calculatedDuration = trackWidth / baseSpeed;
       setDuration(calculatedDuration);
     };
- 
+
+    // Initial calculation
     calculateDuration();
+
+    // Recalculate if the window resizes
     window.addEventListener("resize", calculateDuration);
- 
-    // Guard against setting state after unmount
-    document.fonts.ready.then(() => {
-      if (!cancelled) calculateDuration();
-    });
- 
+    document.fonts.ready.then(calculateDuration);
+
     return () => {
-      cancelled = true;
       window.removeEventListener("resize", calculateDuration);
     };
   }, [items, baseSpeed]);
- 
-  // Pause animation when carousel is scrolled off-screen
-  useEffect(() => {
-    const el = carouselRef.current;
-    if (!el) return;
- 
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
-      { threshold: 0.1 }
-    );
- 
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
- 
+
   return (
-    <div className="pill-carousel" ref={carouselRef}>
+    <div className="pill-carousel">
       <div
         ref={trackRef}
-        className={`pill-track ${direction} ${isVisible ? "is-visible" : ""}`}
+        className={`pill-track ${direction}`}
         style={{ "--duration": `${duration}s` } as React.CSSProperties}
       >
         {[...items, ...items].map((item, index) => (
@@ -73,8 +55,7 @@ const Carousel = ({
     </div>
   );
 };
- 
+
 export default Carousel;
- 
 
 
