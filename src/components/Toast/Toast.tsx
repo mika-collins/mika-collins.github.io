@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceFrown } from "@fortawesome/free-solid-svg-icons";
 import "./Toast.css";
@@ -32,11 +33,12 @@ const Toast = ({ message, onClose, duration = 4500 }: ToastProps) => {
   }, [isClosing, onClose]);
 
   // Render the toast with a closing animation if isClosing is true
-  return (
+  return createPortal(
     <div className={`toast${isClosing ? " toast-closing" : ""}`} role="status">
       <FontAwesomeIcon icon={faFaceFrown} className="toast-icon" />
       <span className="toast-message">{message}</span>
-    </div>
+    </div>,
+    document.body
   );
 };
 
