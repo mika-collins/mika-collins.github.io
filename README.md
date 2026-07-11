@@ -62,7 +62,8 @@ npm run dev
 
 ### Workflow: feature branches and pull requests
 New work happens on its own branch, not directly on `main`:
-```
+
+```bash
 git checkout -b feat/feature-branch
 # make changes
 git add .
