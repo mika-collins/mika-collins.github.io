@@ -19,6 +19,9 @@ const es = {
       primary: "Contáctame",
       secondary: "Descargar Currículum",
     },
+    resumeToast: {
+      message: "¡Ups! Parece que mi currículum está desactualizado. Inténtalo de nuevo cuando lo haya actualizado.",
+    },
   },
 
     // Technologies section

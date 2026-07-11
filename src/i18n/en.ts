@@ -19,6 +19,9 @@ const en = {
       primary: "Contact Me",
       secondary: "Download Resume",
     },
+    resumeToast: {
+      message: "Oops! Looks like my resume is out of date. Please try again once I've updated it.",
+    },
   },
 
   // Technologies section
