@@ -13,6 +13,7 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 - **Google Analytics 4 (GA4)** - Web analytics
 - **EmailJS** - Handles contact form submissions directly via email
 - **GitHub Pages** - Free hosting and deployment of site
+- **GitHub Actions** - CI/CD pipeline that auto-deploys the site on every merge to `main`
 
 ## 💫 Features:
 - Responsive design
@@ -59,16 +60,25 @@ To make and view changes within the development environment:
 npm run dev
 ````
 
-Steps to deploy changes to the published website:
-1. Ensure that all code changes are pushed to github
-```
-git status
+### Workflow: feature branches and pull requests
+New work happens on its own branch, not directly on `main`:
+
+```bash
+git checkout -b feat/feature-branch
+# make changes
 git add .
 git commit -m "Message here"
-git push
+git push -u origin feat/feature-branch
 ```
+Then open a pull request into `main` on GitHub, review, and merge.
 
-2. Deploy the changes to the website:
+### Deployment
+Deployment is automatic through a GitHub Actions workflow
+([.github/workflows/deploy.yml](.github/workflows/deploy.yml)) builds the site
+and publishes it to the `gh-pages` branch every time a commit lands on `main`
+(every time a PR is merged).
+
+If ever need to deploy manually must use the following commands from `main`:
 ```
 npm run build
 npm run deploy
