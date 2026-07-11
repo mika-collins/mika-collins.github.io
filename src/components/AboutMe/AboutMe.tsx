@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./AboutMe.css";
 import ProfileOrbit from "../Visuals/ProfileOrbit/ProfileOrbit";
 import { useTranslation } from "react-i18next";
@@ -5,12 +6,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router";
 import { trackEvent } from "../../analytics";
+import Toast from "../Toast/Toast";
+import { FEATURES } from "../../config/features";
 
 const AboutMe = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const [showResumeToast, setShowResumeToast] = useState(false);
 
+  // Handle resume download click 
   const handleResumeClick = () => {
+    if (!FEATURES.resumeDownloadEnabled) {
+      trackEvent("Resume", "Download Blocked", "About Resume Button"); 
+      setShowResumeToast(true);
+      return;
+    }
+
     trackEvent("Resume", "Download", "About Resume Button");
 
     // Determine file based on current language
@@ -74,6 +85,13 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+
+      {showResumeToast && (
+        <Toast
+          message={t("about.resumeToast.message")}
+          onClose={() => setShowResumeToast(false)}
+        />
+      )}
     </section>
   );
 };
