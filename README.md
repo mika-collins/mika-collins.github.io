@@ -18,7 +18,7 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 - Responsive design
 - Social media links
 - Terminal-style contact form
-- Resume download
+- Resume download, with a toggle (`src/config/features.ts`) to disable it and show a toast notification instead (ex. while the resume is out of date)
 - Project gallery with source code links
 - Analytics tracking
 - Multi-language support (English/Spanish)
@@ -37,10 +37,14 @@ src/
 │   ├── Navbar/
 │   ├── Projects/
 │   ├── TechSkills/
+│   ├── Toast/              # Toast notification component
 │   └── Visuals/            # Animations and Visual Components
 │       ├── Carousel/
 │       ├── ProfileOrbit/
 │       └── Rocket/
+│
+├── config/
+│   └── features.ts         # Feature flags (ex. resume download toggle)
 │
 ├── i18n/
 │   ├── en.ts               # English Translations
