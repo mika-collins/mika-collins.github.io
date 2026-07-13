@@ -17,27 +17,29 @@ function App() {
       {/* Navbar on all pages */}
       <Navbar />
 
-      <Routes>
-        {/* Home page */}
-        <Route
-          path="/"
-          element={
-            <>
-              <AboutMe />
-              <TechSkills />
-              <Experience />
-              <Projects />
-              <RocketShip />
-            </>
-          }
-        />
+      <div className="page-shell">
+        <Routes>
+          {/* Home page */}
+          <Route
+            path="/"
+            element={
+              <>
+                <AboutMe />
+                <TechSkills />
+                <Experience />
+                <Projects />
+                <RocketShip />
+              </>
+            }
+          />
 
-        {/* Contact page */}
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+          {/* Contact page */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
 
-      {/* Footer on all pages */}
-      <Footer />
+        {/* Footer on all pages */}
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
