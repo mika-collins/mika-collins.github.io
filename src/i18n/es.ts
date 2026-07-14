@@ -85,23 +85,23 @@ const es = {
       
       // Campus Involvement subsection
       societies: {
-        label: "Participación en el Campus",
+        label: "Honores y Sociedades",
         list: [
           { 
-            org: "Sigma Delta Pi, Sociedad Nacional Universitaria Hispana de Honor", 
-            role: "Miembro · Abril 2025-Presente" 
+            org: "Graduada Sobresaliente de Ingeniería de Software", 
+            role: "Primavera 2026" 
+          },
+          { 
+            org: "Upsilon Pi Epsilon, Sociedad Internacional de Honor para Computación y Disciplinas de Información", 
+            role: "Miembro · Primavera 2026" 
+          },
+          { 
+            org: "Sigma Delta Pi, Sociedad Nacional de Honor para Estudiantes Hispanos", 
+            role: "Miembro· Primavera 2025" 
           },
           { 
             org: "Consejo Asesor de Ingeniería de Software de UNCW", 
-            role: "Representante Estudiantil  · Ene 2025-Presente" 
-          },
-          {
-            org: "Sociedad de Mujeres Ingenieras (SWE)",
-            role: "Miembro · Sep 2024-Presente"
-          },
-          { 
-            org: "Asociación para la Maquinaria de Computación (ACM)", 
-            role: "Miembro · Feb 2024-Presente" 
+            role: "Representante Estudiantil  · Ene 2025-Mayo 2026" 
           },
         ]
       }

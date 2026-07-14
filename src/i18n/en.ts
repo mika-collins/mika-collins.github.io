@@ -85,23 +85,23 @@ const en = {
       
       // Campus Involvement subsection
       societies: {
-        label: "Campus Involvement",
+        label: "Honors and Societies",
         list: [
           { 
+            org: "Outstanding Graduate of Software Engineering", 
+            role: "Spring 2026" 
+          },
+          { 
+            org: "Upsilon Pi Epsilon, International Honor Society for Computing and Information Disciplines", 
+            role: "Member · Spring 2026" 
+          },
+          { 
             org: "Sigma Delta Pi, National Collegiate Hispanic Honor Society", 
-            role: "Member · April 2025-Present" 
+            role: "Member· Spring 2025" 
           },
           { 
             org: "UNCW Software Engineering Advisory Board", 
-            role: "Student Representative  · Jan 2025-Present" 
-          },
-          {
-            org: "Society of Women Engineers (SWE)",
-            role: "Member · Sep 2024-Present"
-          },
-          { 
-            org: "Association for Computing Machinery (ACM)", 
-            role: "Member · Feb 2024-Present" 
+            role: "Student Representative  · Jan 2025-May 2026" 
           },
         ]
       }
