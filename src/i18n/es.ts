@@ -13,7 +13,7 @@ const es = {
   about: {
     label: "Misión Control",
     title: "Mika Collins",
-    description: "Soy una estudiante de Ingeniería de Software con pasión por enfrentar problemas desafiantes, aprender nuevas tecnologías y esforzarme continuamente para crecer como ingeniera. Estoy ansiosa por explorar nuevas oportunidades donde pueda contribuir y seguir mejorando.",
+    description: "Soy una ingeniera de software con pasión por enfrentar problemas desafiantes, aprender nuevas tecnologías y esforzarme continuamente para crecer como profesional. Siempre estoy abierto a conectarme con otros, así que no dudes en contactarme!",
     location: "Carolina del Norte, EE.UU.",
     actions: {
       primary: "Contáctame",
