@@ -61,24 +61,24 @@ const en = {
         label: "Relevant Experience",
         positions: [
           {
-            title: "Software Engineering Fellowship",
-            company: "Kittelson & Associates · Feb 2026-Present",
-            description: "Designing and developing new modules and interface enhancements for Kittelson's wzKIT\u2122 platform, collaborating with industry engineers in sprints to improve data-driven analysis of work zone safety, mobility impacts, and real-time roadway planning."
+            title: "Junior Software Engineer",
+            company: "MetLife · Jun 2026-Present",
+            description: "Building a more confident future!"
           },
           {
-            title: "Research Assistant",
-            company: "UNCW Computer Science Department · Jan 2026-Present",
-            description: "Investigating agentic software engineering by building an automated framework using SWE-bench to analyze how autonomous AI agents solve real GitHub issues, focusing on robustness, security, and integrity of the agent's behavior."
+            title: "Software Engineering Fellowship",
+            company: "Kittelson & Associates, Inc. · Feb 2026-May 2026",
+            description: "Developed new modules and interface enhancements for Kittelson's wzKIT\u2122 platform, improving data-driven analysis of work zone safety and roadway planning."
           },
           {
             title: "Teaching Assistant",
-            company: "UNCW Computer Science Department · Jan 2025-Present",
-            description: "Assisted in introductory (CSC 131) and data structures & algorithms (CSC 231) courses by reviewing Python assignments, debugging student programs, providing detailed feedback, and designing test files to assess program accuracy and functionality."
+            company: "UNCW Computer Science Department · Jan 2025-May 2026",
+            description: "Assisted in Introduction to Computer Science and Data Structures & Algorithms courses by reviewing Python assignments, debugging student code, and designing tests to verify program accuracy."
           },
           {
             title: "Research Assistant",
             company: "UNCW Computer Science Department · Summer 2025",
-            description: "Conducted applied research to evaluate the capability of LLMs to generate secure backend web application code, creating benchmark datasets and focusing on vulnerabilities such as SQL injection, XSS, and data exposure."
+            description: "Evaluated LLMs' ability to generate secure backend code, building benchmark datasets focused on SQL injection, XSS, and data exposure vulnerabilities."
           }
         ]
       },
