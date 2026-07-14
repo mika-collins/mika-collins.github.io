@@ -13,7 +13,7 @@ const es = {
   about: {
     label: "Misión Control",
     title: "Mika Collins",
-    description: "Soy una estudiante de Ingeniería de Software con pasión por enfrentar problemas desafiantes, aprender nuevas tecnologías y esforzarme continuamente para crecer como ingeniera. Estoy ansiosa por explorar nuevas oportunidades donde pueda contribuir y seguir mejorando.",
+    description: "Soy una ingeniera de software con muchas ganas de enfrentar problemas desafiantes, aprender nuevas tecnologías y esforzarme continuamente para crecer como profesional. Siempre estoy abierta a conectarme con otros, así que no dudes en contactarme!",
     location: "Carolina del Norte, EE.UU.",
     actions: {
       primary: "Contáctame",
@@ -61,47 +61,47 @@ const es = {
         label: "Experiencia Relevante",
         positions: [
           {
-            title: "Beca de Ingeniería de Software",
-            company: "Kittelson & Associates · Feb 2026-Presente",
-            description: "Diseñando y desarrollando nuevos módulos y mejoras de interfaz para la plataforma wzKIT\u2122 de Kittelson, colaborando con ingenieros industriales en sprints para mejorar el análisis basado en datos de seguridad de zonas de trabajo, impactos de movilidad y planificación vial en tiempo real."
+            title: "Ingeniera de Software Junior",
+            company: "MetLife · Jun 2026-Presente",
+            description: "¡Construyendo un futuro con más confianza!"
           },
           {
-            title: "Asistente de Investigación",
-            company: "Departamento de Ciencias de la Computación de UNCW · Ene 2026-Presente",
-            description: "Investigando la ingeniería de software agéntica construyendo un marco automatizado usando SWE-bench para analizar cómo los agentes de IA autónomos resuelven problemas reales de GitHub, enfocándome en la robustez, seguridad e integridad del comportamiento del agente."
+            title: "Beca de Ingeniería de Software",
+            company: "Kittelson & Associates, Inc. · Feb 2026-Mayo 2026",
+            description: "Desarrollé nuevos módulos y mejoras de interfaz para la plataforma wzKIT™ de Kittelson, mejorando el análisis de seguridad de zonas de trabajo y planificación vial."
           },
           {
             title: "Asistente de Enseñanza",
-            company: "Departamento de Ciencias de la Computación de UNCW · Ene 2025-Presente",
-            description: "Asistí en cursos introductorios (CSC 131) y de estructuras de datos y algoritmos (CSC 231) revisando tareas de Python, depurando programas de estudiantes, proporcionando retroalimentación detallada y diseñando archivos de prueba para evaluar la precisión y funcionalidad de los programas."
+            company: "Departamento de Ciencias de la Computación de UNCW · Ene 2025-Mayo 2026",
+            description: "Asistí en los cursos Introducción a la Ciencia de la Computación y Estructuras de Datos y Algoritmos revisando tareas de Python, depurando código de estudiantes y diseñando pruebas para verificar su precisión."
           },
           {
             title: "Asistente de Investigación",
             company: "Departamento de Ciencias de la Computación de UNCW · Verano 2025",
-            description: "Realicé investigación aplicada para evaluar la capacidad de los LLM para generar código seguro de aplicaciones web backend, creando conjuntos de datos de referencia y enfocándome en vulnerabilidades como inyección SQL, XSS y exposición de datos."
+            description: "Evalué la capacidad de los LLM para generar código backend seguro, creando conjuntos de datos de referencia enfocados en inyección SQL, XSS y exposición de datos."
           }
         ]
       },
       
       // Campus Involvement subsection
       societies: {
-        label: "Participación en el Campus",
+        label: "Honores y Sociedades",
         list: [
           { 
-            org: "Sigma Delta Pi, Sociedad Nacional Universitaria Hispana de Honor", 
-            role: "Miembro · Abril 2025-Presente" 
+            org: "Graduada Sobresaliente de Ingeniería de Software", 
+            role: "Primavera 2026" 
+          },
+          { 
+            org: "Upsilon Pi Epsilon, Sociedad Internacional de Honor para Computación y Disciplinas de Información", 
+            role: "Miembro · Primavera 2026" 
+          },
+          { 
+            org: "Sigma Delta Pi, Sociedad Nacional de Honor para Estudiantes Hispanos", 
+            role: "Miembro· Primavera 2025" 
           },
           { 
             org: "Consejo Asesor de Ingeniería de Software de UNCW", 
-            role: "Representante Estudiantil  · Ene 2025-Presente" 
-          },
-          {
-            org: "Sociedad de Mujeres Ingenieras (SWE)",
-            role: "Miembro · Sep 2024-Presente"
-          },
-          { 
-            org: "Asociación para la Maquinaria de Computación (ACM)", 
-            role: "Miembro · Feb 2024-Presente" 
+            role: "Representante Estudiantil  · Ene 2025-Mayo 2026" 
           },
         ]
       }

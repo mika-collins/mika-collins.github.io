@@ -65,7 +65,6 @@ const Experience = () => {
               </div>
             </div>
             
-            {/* Comment out research position for now, may add back later if continued
             <div className="timeline-item">
               <span className="timeline-dot" />
               <div className="timeline-content">
@@ -76,7 +75,7 @@ const Experience = () => {
                 </p>
               </div>
             </div>
-            */}
+
             <div className="timeline-item">
               <span className="timeline-dot" />
               <div className="timeline-content">
