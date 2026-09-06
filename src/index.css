@@ -32,6 +32,13 @@ body::-webkit-scrollbar {
   display: none;              
 }
 
+/* Page shell to ensure full height and flex layout */
+.page-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Star layer */
 .stars {
   position: fixed;
