@@ -63,7 +63,7 @@ const en = {
           {
             title: "Junior Software Engineer",
             company: "MetLife · Jun 2026-Present",
-            description: "Building a more confident future!"
+            description: "Implementing business requirements in IBM OpenPages, troubleshooting production issues, resolving UAT defects, and supporting monthly releases across DEV, QA, and Prod environments."
           },
           {
             title: "Software Engineering Fellowship",
@@ -87,6 +87,10 @@ const en = {
       societies: {
         label: "Honors and Societies",
         list: [
+          { 
+            org: "First Graduate of the UNCW Software Engineering Program", 
+            role: "Spring 2026" 
+          },
           { 
             org: "Outstanding Graduate of Software Engineering", 
             role: "Spring 2026" 

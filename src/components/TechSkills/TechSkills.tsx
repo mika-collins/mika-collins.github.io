@@ -11,10 +11,11 @@ import {
   faReact,
   faVuejs,
   faGitAlt,
+  faDocker,
   faPhp,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faTasks, faVial, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faTasks, faCogs } from "@fortawesome/free-solid-svg-icons";
 
 const technologies = [
   {
@@ -41,9 +42,9 @@ const technologies = [
     key: "tools",
     iconItems: [
       { icon: faGitAlt, label: "Git" },
+      { icon: faDocker, label: "Docker" },
       { icon: faFigma, label: "Figma" },
       { icon: faTasks, label: "Agile/Scrum" },
-      { icon: faVial, label: "Testing" },
       { icon: faCogs, label: "CI/CD" },
     ],
   },
@@ -69,15 +70,21 @@ const Technologies = () => {
                   </div>
                 ))}
 
-                {/* Custom addition for TypeScript (does not exist in fontawesome) */}
                 {category.key === "frontend" && (
                   <div className="tech-item">
-                    {/* Shadow wrapper */}
                     <div className="custom-icon-shadow">
-                      {/* Masked icon */}
-                      <div className="custom-icon-wrapper" />
+                      <div className="custom-icon-wrapper custom-icon-wrapper--typescript" />
                     </div>
                     <span>TypeScript</span>
+                  </div>
+                )}
+
+                {category.key === "tools" && (
+                  <div className="tech-item">
+                    <div className="custom-icon-shadow">
+                      <div className="custom-icon-wrapper custom-icon-wrapper--bruno" />
+                    </div>
+                    <span>Bruno</span>
                   </div>
                 )}
 
