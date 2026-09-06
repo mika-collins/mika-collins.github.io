@@ -88,6 +88,10 @@ const es = {
         label: "Honores y Sociedades",
         list: [
           { 
+            org: "Primera Graduada del Programa de Ingeniería de Software de UNCW", 
+            role: "Primavera 2026" 
+          },
+          { 
             org: "Graduada Sobresaliente de Ingeniería de Software", 
             role: "Primavera 2026" 
           },

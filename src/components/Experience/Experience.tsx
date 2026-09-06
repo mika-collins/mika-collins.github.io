@@ -125,6 +125,10 @@ const Experience = () => {
               <span className="society-org">{t("experience.societies.list.3.org")}</span>
               <span className="society-role">{t("experience.societies.list.3.role")}</span>
             </div>
+            <div className="society-item">
+              <span className="society-org">{t("experience.societies.list.4.org")}</span>
+              <span className="society-role">{t("experience.societies.list.4.role")}</span>
+            </div>
           </div>
         </div>
       </div>
