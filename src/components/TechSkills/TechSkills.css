@@ -71,7 +71,7 @@
   filter: drop-shadow(0 0 15px #ffffff);
 }
 
-/* TypeScript Custom Icon Styles */
+/* TypeScript custom icon styles */
 .custom-icon-shadow {
   display: inline-flex;
   transition: transform 0.3s, filter 0.3s;
@@ -81,13 +81,23 @@
   width: 2em;
   height: 2em;
   background-color: #7f7fff;
+  transition: background-color 0.3s;
+}
 
+/* TypeScript custom icon styles */
+.custom-icon-wrapper--typescript {
   mask: url('/typescript.svg') no-repeat center;
   -webkit-mask: url('/typescript.svg') no-repeat center;
   mask-size: contain;
   -webkit-mask-size: contain;
+}
 
-  transition: background-color 0.3s;
+/* Bruno custom icon styles */
+.custom-icon-wrapper--bruno {
+  mask: url('/bruno.svg') no-repeat center;
+  -webkit-mask: url('/bruno.svg') no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
 }
 
 .tech-item:hover .custom-icon-shadow {
