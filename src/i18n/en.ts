@@ -63,7 +63,7 @@ const en = {
           {
             title: "Junior Software Engineer",
             company: "MetLife · Jun 2026-Present",
-            description: "Building a more confident future!"
+            description: "Implementing business requirements in IBM OpenPages, troubleshooting production issues, resolving UAT defects, and supporting monthly releases across DEV, QA, and Prod environments."
           },
           {
             title: "Software Engineering Fellowship",

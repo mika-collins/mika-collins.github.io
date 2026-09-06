@@ -63,7 +63,7 @@ const es = {
           {
             title: "Ingeniera de Software Junior",
             company: "MetLife · Jun 2026-Presente",
-            description: "¡Construyendo un futuro con más confianza!"
+            description: "Implementando requisitos comerciales en IBM OpenPages, solucionando problemas de producción, resolviendo defectos de UAT y apoyando lanzamientos mensuales en entornos DEV, QA y Prod."
           },
           {
             title: "Beca de Ingeniería de Software",
