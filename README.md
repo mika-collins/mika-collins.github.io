@@ -96,8 +96,8 @@ This site collects limited data to help improve content and allow users to conta
 
 <sub>
     <b>Visual Components</b> - Two visual components (ProfileOrbit and Rocket) are derived from code originally created by JkHuger. The original code has been modified and integrated into this project.<br>
-    <b>Icons</b> - TypeScript icon provided by  <a href="https://simpleicons.org">Simple Icons</a> and remaining icons provided by <a href="https://fontawesome.com/">Font Awesome</a>.<br>
-    <b>Libraries</b> - Open-source libraries include 'React;, 'i18next', and others, as detailed in the Technologies section.<br>
+    <b>Icons</b> - TypeScript and Bruno icons are provided by <a href="https://simpleicons.org">Simple Icons</a>, and the remaining icons are provided by <a href="https://fontawesome.com/">Font Awesome</a>.<br>
+    <b>Libraries</b> - Open-source libraries include React, i18next, and others, as detailed in the Technologies section.<br>
     <b>AI Assistance</b> - Portions of the site design and development were assisted by AI to streamline coding and layout decisions.<br>
 </sub>
 
