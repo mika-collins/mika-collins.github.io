@@ -1,0 +1,28 @@
+name: Issue
+description: Report a bug or propose an enhancement
+title: ""
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What's the current gap, limitation, or pain point?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How should this be addressed? Bullet points are fine.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Use GitHub task list syntax so items render as checkboxes.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
