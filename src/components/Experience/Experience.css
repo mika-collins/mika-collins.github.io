@@ -141,6 +141,31 @@
   margin-top: 2px; 
 }
 
+.society-link {
+  color: #a5a5ff;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.society-link:hover,
+.society-link:focus-visible {
+  color: #e5e7eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.society-link:focus-visible {
+  outline: 1px solid #7f7fff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.society-link-icon {
+  font-size: 0.6rem;
+  margin-left: 6px;
+}
+
 /* Timeline styles */
 .timeline {
   position: relative;

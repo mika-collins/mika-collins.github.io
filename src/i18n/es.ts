@@ -89,7 +89,8 @@ const es = {
         list: [
           { 
             org: "Primera Graduada del Programa de Ingeniería de Software de UNCW", 
-            role: "Primavera 2026" 
+            role: "Primavera 2026",
+            linkLabel: "Leer el artículo"
           },
           { 
             org: "Graduada Sobresaliente de Ingeniería de Software", 

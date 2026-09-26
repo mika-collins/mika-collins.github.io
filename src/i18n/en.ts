@@ -89,7 +89,8 @@ const en = {
         list: [
           { 
             org: "First Graduate of the UNCW Software Engineering Program", 
-            role: "Spring 2026" 
+            role: "Spring 2026",
+            linkLabel: "Read the feature"
           },
           { 
             org: "Outstanding Graduate of Software Engineering", 

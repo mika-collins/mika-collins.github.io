@@ -1,8 +1,11 @@
 import "./Experience.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMeteor, faSatellite, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faMeteor, faSatellite, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import Carousel from "../Visuals/Carousel/Carousel";
+
+// UNCW blog feature link
+const FIRST_GRAD_ARTICLE_URL = "https://www.uncw.edu/news/seahawk-stories/2026/05/collins-mika?image";
 
 const Experience = () => {
     const { t } = useTranslation();
@@ -111,7 +114,23 @@ const Experience = () => {
           <div className="card-description">
             <div className="society-item">
               <span className="society-org">{t("experience.societies.list.0.org")}</span>
-              <span className="society-role">{t("experience.societies.list.0.role")}</span>
+              <span className="society-role">
+                {t("experience.societies.list.0.role")}
+                {FIRST_GRAD_ARTICLE_URL && (
+                  <>
+                    {" · "}
+                    <a
+                      href={FIRST_GRAD_ARTICLE_URL}
+                      className="society-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("experience.societies.list.0.linkLabel")}
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="society-link-icon" />
+                    </a>
+                  </>
+                )}
+              </span>
             </div>
             <div className="society-item">
               <span className="society-org">{t("experience.societies.list.1.org")}</span>
