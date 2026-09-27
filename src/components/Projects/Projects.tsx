@@ -5,8 +5,11 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { trackEvent } from "../../analytics";
 
+type ProjectCategory = "personal" | "openSource" | "academic" | "freelance";
+
 type Project = {
   title: string;
+  category: ProjectCategory;
   timeframe: string;
   description: string;
   image: string;
@@ -49,7 +52,16 @@ const Projects = () => {
 
             {/* Content */}
             <h4 className="card-title">{project.title}</h4>
-            <p className="mono-meta">{project.timeframe}</p>
+
+            {/* Timeframe · category */}
+            <p className="mono-meta">
+              {project.timeframe}
+              {" · "}
+              <span className={`project-category ${project.category}`}>
+                {t(`projects.categories.${project.category}`)}
+              </span>
+            </p>
+
             <p className="card-description">{project.description}</p>
 
             {/* Tech stack */}
@@ -119,9 +131,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-
-
-
