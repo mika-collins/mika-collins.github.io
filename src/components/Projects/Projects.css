@@ -44,6 +44,16 @@
   object-fit: cover;
 }
 
+/* Category colors (shown after the timeframe) */
+.project-category {
+  white-space: nowrap;
+}
+
+.project-category.personal   { color: #38bdf8; }
+.project-category.openSource { color: #34d399; }
+.project-category.academic   { color: #fbbf24; }
+.project-category.freelance  { color: #f472b6; }
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;

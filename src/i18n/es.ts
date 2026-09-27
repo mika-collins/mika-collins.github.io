@@ -117,10 +117,17 @@ const es = {
       title: "Mis Proyectos",
       viewLess: "Ver Menos",
       viewMore: "Ver Más ({{count}})",
+      categories: {
+        personal: "Personal",
+        openSource: "Código Abierto",
+        academic: "Académico",
+        freelance: "Freelance",
+      },
       list: [
         {
           title: "Colaboradora de Código Abierto a Apache Grails",
-          timeframe: "Marzo 2026 - Presente",
+          category: "openSource",
+          timeframe: "Marzo 2026",
           description: "Contribuí al framework de Apache Grails resolviendo inconsistencias en la publicación de documentación y mejorando la confiabilidad de la construcción para la guía oficial de usuarios de Grails. También contribuí con mejoras al tooling de construcción y al flujo de trabajo de CI para mejorar el informe de estilo de código en GitHub Actions.",
           image: "/ApacheGrails/MergedPR.png",
           tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
@@ -130,7 +137,8 @@ const es = {
         },
         {
           title: "Sitio web de SFTB Enterprises",
-          timeframe: "Diciembre 2025 - Presente",
+          category: "freelance",
+          timeframe: "Presente",
           description: "Un sitio web moderno creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y los proyectos destacados a través de una interfaz basada en React responsive.",
           image: "/SFTB/SFTBWebsite.png",
           tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
@@ -140,6 +148,7 @@ const es = {
         },
         {
           title: "Sitio de Portafolio",
+          category: "personal",
           timeframe: "Diciembre 2025 - Enero 2026",
           description: "Mi portafolio web con diseño adaptable para exhibir mis habilidades, experiencia y proyectos. Cuenta con soporte multilingüe e integración con GA4 para analizar la interacción de los usuarios.",
           image: "/PersonalPortfolio/PersonalPortfolio.png",
@@ -150,6 +159,7 @@ const es = {
         },
         {
           title: "The Floor is Lava",
+          category: "academic",
           timeframe: "Agosto 2025 - Diciembre 2025",
           description: "Una aplicación web que visualiza la ocupación de habitaciones en tiempo real escaneando señales WiFi a través de Raspberry Pis y muestra los datos como un mapa de calor dinámico.",
           image: "/Heatmap/HeatmapTutorial.png",
@@ -160,6 +170,7 @@ const es = {
         },
         {
           title: "Rastreador de Solicitudes de Prácticas",
+          category: "personal",
           timeframe: "Verano 2025",
           description: "Una aplicación basada en Java diseñada para ayudar a los estudiantes a rastrear, organizar y gestionar sus solicitudes de prácticas durante la universidad.",
           image: "/InternshipTracker/InternshipTracker.png",
@@ -170,6 +181,7 @@ const es = {
         },
         {
           title: "Sitio de la Tienda de Halloween",
+          category: "academic",
           timeframe: "Agosto 2025 - Octubre 2025",
           description: "Un sitio web simulado para una tienda de Halloween construido a través de una serie de laboratorios para un curso de desarrollo web del lado del cliente.",
           image: "/HalloweenStore/HalloweenStore.png",
