@@ -117,10 +117,17 @@ const en = {
       title: "My Projects",
       viewLess: "View Less",
       viewMore: "View More ({{count}})",
+      categories: {
+        personal: "Personal",
+        openSource: "Open Source",
+        academic: "Academic",
+        freelance: "Freelance",
+      },
       list: [
         {
           title: "Apache Grails Open Source Contributor",
-          timeframe: "March 2026 - Present",
+          category: "openSource",
+          timeframe: "March 2026",
           description: "Contributed to the Apache Grails framework by resolving documentation publishing inconsistencies and improving build reliability for the official Grails user guide. Also contributed improvements to Grails' build tooling and CI workflow to improve code style reporting in GitHub Actions.",
           image: "/ApacheGrails/MergedPR.png",
           tech: ["Groovy", "Java", "Gradle", "Git", "GitHub Actions"],
@@ -130,7 +137,8 @@ const en = {
         },
         {
           title: "SFTB Enterprises Website",
-          timeframe: "December 2025 - Present",
+          category: "freelance",
+          timeframe: "Present",
           description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive React-based interface.",
           image: "/SFTB/SFTBWebsite.png",
           tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
@@ -140,6 +148,7 @@ const en = {
         },
         {
           title: "Portfolio Site",
+          category: "personal",
           timeframe: "December 2025 - January 2026",
           description: "My responsive portfolio website to feature my skills, experience, and projects. Integrated with multi-language support and GA4 to track user engagement.",
           image: "/PersonalPortfolio/PersonalPortfolio.png",
@@ -150,6 +159,7 @@ const en = {
         },
         {
           title: "The Floor is Lava",
+          category: "academic",
           timeframe: "August 2025 - December 2025",
           description: "A web application that visualizes real-time room occupancy by scanning WiFi signals via Raspberry Pis and displays the data as a dynamic heatmap.",
           image: "/Heatmap/HeatmapTutorial.png",
@@ -160,6 +170,7 @@ const en = {
         },
         {
           title: "Internship Application Tracker",
+          category: "personal",
           timeframe: "Summer 2025",
           description: "A Java-based application designed to help students track, organize, and manage their internship applications throughout college.",
           image: "/InternshipTracker/InternshipTracker.png",
@@ -170,6 +181,7 @@ const en = {
         },
         {
           title: "Halloween Store Website",
+          category: "academic",
           timeframe: "August 2025 - October 2025",
           description: "A mock website for a Halloween store built through a series of labs for a client-side web development course.",
           image: "/HalloweenStore/HalloweenStore.png",
