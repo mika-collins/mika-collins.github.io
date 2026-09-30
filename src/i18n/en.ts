@@ -62,7 +62,7 @@ const en = {
         positions: [
           {
             title: "Junior Software Engineer",
-            company: "MetLife · Jun 2026-Present",
+            company: "MetLife · Jun 2026-Sep 2026",
             description: "Implementing business requirements in IBM OpenPages, troubleshooting production issues, resolving UAT defects, and supporting monthly releases across DEV, QA, and Prod environments."
           },
           {
@@ -124,6 +124,18 @@ const en = {
         freelance: "Freelance",
       },
       list: [
+        {
+          title: "VRChat Live Translator",
+          category: "personal",
+          timeframe: "September 2026 - Present",
+          description: "A Python desktop app that captures your voice, translates it in real time, and sends the result to VRChat's in-game Chatbox over OSC, allowing players to talk across language barriers.",
+          image: "/LiveTranslator/poster.png",
+          video: "/LiveTranslator/translator-demo.mp4",
+          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "deep-translator", "python-osc", "pynput"],
+          github: "https://github.com/mika-collins",
+          sourceLabel: "Under Development",
+          disabled: true
+        },
         {
           title: "Apache Grails Open Source Contributor",
           category: "openSource",
