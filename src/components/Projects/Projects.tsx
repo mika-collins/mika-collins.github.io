@@ -13,6 +13,7 @@ type Project = {
   timeframe: string;
   description: string;
   image: string;
+  video?: string; // Optional demo video; image is used as its thumbnail
   tech: string[];
   github: string;
   sourceLabel: string;
@@ -41,13 +42,32 @@ const Projects = () => {
         {projects.slice(0, visibleCount).map((project, index) => (
           <div className="bento-card project-card" key={index}>
             
-            {/* Image */}
+            {/* Image or demo video */}
             <div className="project-image-wrapper">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-              />
+              {project.video ? (
+                <video
+                  src={project.video}
+                  poster={project.image}
+                  aria-label={project.title}
+                  className="project-image"
+                  controls
+                  controlsList="nodownload"
+                  disablePictureInPicture
+                  onContextMenu={(e) => e.preventDefault()}
+                  muted
+                  playsInline
+                  preload="none"
+                  onPlay={() =>
+                    trackEvent("Projects", "Demo Play", project.title)
+                  }
+                />
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              )}
             </div>
 
             {/* Content */}
