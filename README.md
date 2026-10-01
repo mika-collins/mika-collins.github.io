@@ -8,20 +8,22 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 - **React** - Component-based UI for building reusable elements
 - **TypeScript** - Type-safe JavaScript
 - **Vite** - Development server and build tool
+- **ESLint** - Linting for TypeScript and React (including React Hooks rules)
+- **React Router** - Client-side routing between pages
 - **CSS** - Styling, animations, and responsive design
 - **i18next** - Internationalization support (en/es)
 - **Font Awesome & Simple Icons** - Icons for social links and features
 - **Google Analytics 4 (GA4)** - Web analytics
 - **EmailJS** - Handles contact form submissions directly via email
 - **GitHub Pages** - Free hosting and deployment of site
-- **GitHub Actions** - CI/CD pipeline that auto-deploys the site on every merge to `main`
+- **GitHub Actions** - CI/CD pipeline that lints and builds every pull request, and auto-deploys the site on every merge to `main`
 
 ## 💫 Features:
 - Responsive design
 - Social media links
 - Terminal-style contact form
 - Resume download, with a toggle (`src/config/features.ts`) to disable it and show a toast notification instead (ex. while the resume is out of date)
-- Project gallery with source code links
+- Project gallery with category labels, demo videos, and source code links
 - Analytics tracking
 - Multi-language support (English/Spanish)
 
@@ -29,6 +31,8 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 This project is structured to keep components modular and organized:
 
 ```bash
+.github/                    # Issue/PR templates and CI/CD workflows
+public/                     # Static assets (project media, resume, icons)
 src/
 ├── components/             # Page Sections and UI elements
 │   ├── StarBackground.tsx  
@@ -59,11 +63,26 @@ src/
 └── main.tsx                # Entry point
 ```
 
-## Instructions for Development:
+## 📝 Instructions for Development:
+Install dependencies (first time, or after `package.json` changes):
+```
+npm install
+```
+
 To make and view changes within the development environment:
 ```
 npm run dev
-````
+```
+
+To check the code for lint errors and warnings:
+```
+npm run lint
+```
+
+To check for errors only (matches what CI runs on pull requests):
+```
+npm run lint -- --quiet
+```
 
 ### Workflow: feature branches and pull requests
 New work happens on its own branch, not directly on `main`:
@@ -77,19 +96,24 @@ git push -u origin feat/feature-branch
 ```
 Then open a pull request into `main` on GitHub, review, and merge.
 
+### Continuous Integration
+Every pull request into `main` runs a GitHub Actions workflow
+([.github/workflows/ci.yml](.github/workflows/ci.yml)) that installs dependencies,
+runs ESLint, and builds the site. The lint step only fails on errors; warnings are
+ignored. Check that it passes before merging.
+
 ### Deployment
 Deployment is automatic through a GitHub Actions workflow
-([.github/workflows/deploy.yml](.github/workflows/deploy.yml)) builds the site
+([.github/workflows/deploy.yml](.github/workflows/deploy.yml)), which builds the site
 and publishes it to the `gh-pages` branch every time a commit lands on `main`
 (every time a PR is merged).
 
-If ever need to deploy manually must use the following commands from `main`:
+To deploy manually, run the following command from `main` (it builds the site first automatically):
 ```
-npm run build
 npm run deploy
 ```
 
-### Disclosure
+## Disclosure
 
 This site collects limited data to help improve content and allow users to contact me. It uses Google Analytics 4 (GA4), a web analytics service provided by Google, to collect aggregated, non-identifying usage data such as page views, interaction events (scrolls and button clicks), approximate location (city level), and time spent on pages. This data is used to understand site engagement and improve content design. The site also uses EmailJS to deliver messages submitted through the contact form. When a form is submitted, the user's name, email address, and message are transmitted to EmailJS servers solely to deliver the message. The site owner, myself, does not collect or store personally identifiable information from analytics data or contact form submissions.
 
