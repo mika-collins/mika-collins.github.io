@@ -8,6 +8,7 @@ import TechSkills from "./components/TechSkills/TechSkills";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import SectionNav from "./components/SectionNav/SectionNav";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                 <Experience />
                 <Projects />
                 <RocketShip />
+                <SectionNav />
               </>
             }
           />

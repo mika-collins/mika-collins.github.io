@@ -1,0 +1,198 @@
+/* Keep section headings clear of the fixed navbar when jumped to */
+#technologies,
+#experience,
+#projects {
+  scroll-margin-top: 64px;
+}
+
+/* Rail wrapper, vertically centered on the right edge */
+.section-nav {
+  position: fixed;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+/* Faint line connecting the dots */
+.section-nav-track {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: rgba(127, 127, 255, 0.15);
+  overflow: hidden;
+}
+
+/* Scroll progress fill */
+.section-nav-progress {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(127, 127, 255, 0.2),
+    rgba(127, 127, 255, 0.65)
+  );
+  transform-origin: top;
+  transition: transform 0.15s linear;
+}
+
+.section-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Clickable area around each dot */
+.section-nav-item {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Star dot */
+.section-nav-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(229, 231, 235, 0.35);
+  transition:
+    width 0.25s ease,
+    height 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.section-nav-item:hover .section-nav-dot,
+.section-nav-item:focus-visible .section-nav-dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(127, 127, 255, 0.8);
+}
+
+.section-nav-item.active .section-nav-dot {
+  width: 9px;
+  height: 9px;
+  background: #7f7fff;
+  box-shadow:
+    0 0 8px rgba(127, 127, 255, 0.9),
+    0 0 16px rgba(127, 127, 255, 0.45);
+}
+
+/* Label revealed on hover / keyboard focus */
+.section-nav-label {
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translate(6px, -50%);
+  white-space: nowrap;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(127, 127, 255, 0.35);
+  background: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  /* Hidden labels ignore the mouse; the delays give a short grace period
+     to move between the dots and pills before they hide */
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease 0.25s,
+    transform 0.2s ease 0.25s,
+    visibility 0s linear 0.45s,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Invisible bridge across the gap between the pill and its dot */
+.section-nav-label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 14px;
+}
+
+/* Hovering the rail reveals every label so any pill can be clicked */
+.section-nav:hover .section-nav-label,
+.section-nav:has(.section-nav-item:focus-visible) .section-nav-label {
+  opacity: 0.6;
+  visibility: visible;
+  transform: translate(0, -50%);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0s,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Current and hovered/focused labels stand out from the rest */
+.section-nav:hover .section-nav-item.active .section-nav-label,
+.section-nav:has(.section-nav-item:focus-visible) .section-nav-item.active .section-nav-label,
+.section-nav-item:hover .section-nav-label,
+.section-nav-item:focus-visible .section-nav-label {
+  opacity: 1;
+}
+
+/* Highlight the pill when hovered so it reads as clickable */
+.section-nav-label:hover {
+  border-color: rgba(127, 127, 255, 0.6);
+  box-shadow: 0 0 12px rgba(127, 127, 255, 0.35);
+}
+
+.section-nav-item:focus-visible {
+  outline: none;
+}
+
+/* Give the wide projects grid room so its cards clear the rail */
+@media (min-width: 1321px) and (max-width: 1600px) {
+  .projects-section {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+/* Hide on smaller screens where there is no side gutter and it would overlap content */
+@media (max-width: 1320px) {
+  .section-nav {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-nav-dot,
+  .section-nav-progress {
+    transition: none;
+  }
+
+  /* Keep the hide delay so pills stay reachable, but skip the animation */
+  .section-nav .section-nav-label {
+    transition: visibility 0s linear 0.45s;
+  }
+
+  .section-nav:hover .section-nav-label,
+  .section-nav:has(.section-nav-item:focus-visible) .section-nav-label {
+    transition: none;
+  }
+}

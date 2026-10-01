@@ -9,6 +9,15 @@ const en = {
     name: "Mika",
   },
 
+  // Section navigator (side rail)
+  sectionNav: {
+    label: "Page sections",
+    about: "About",
+    technologies: "Tech Stack",
+    experience: "Experience",
+    projects: "Projects",
+  },
+
   // About Me section 
   about: {
     label: "Mission Control",
