@@ -7,6 +7,7 @@ Check it out here: [https://mika-collins.github.io](https://mika-collins.github.
 ## 🛠️ Technologies Used:
 - **React** - Component-based UI for building reusable elements
 - **TypeScript** - Type-safe JavaScript
+- **Vite** - Development server and build tool
 - **CSS** - Styling, animations, and responsive design
 - **i18next** - Internationalization support (en/es)
 - **Font Awesome & Simple Icons** - Icons for social links and features
