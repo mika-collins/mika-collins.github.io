@@ -9,6 +9,15 @@ const es = {
     name: "Mika",
   },
 
+  // Section navigator (side rail)
+  sectionNav: {
+    label: "Secciones de la página",
+    about: "Sobre Mí",
+    technologies: "Tecnologías",
+    experience: "Experiencia",
+    projects: "Proyectos",
+  },
+
   // About Me section 
   about: {
     label: "Misión Control",
