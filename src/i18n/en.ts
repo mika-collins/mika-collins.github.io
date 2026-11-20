@@ -131,7 +131,7 @@ const en = {
           description: "A Python desktop app that captures your voice, translates it in real time, and sends the result to VRChat's in-game Chatbox over OSC, allowing players to talk across language barriers.",
           image: "/LiveTranslator/poster.png",
           video: "/LiveTranslator/translator-demo.mp4",
-          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "deep-translator", "python-osc", "pynput"],
+          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "python-osc", "pynput"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
