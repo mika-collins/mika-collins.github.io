@@ -131,7 +131,7 @@ const en = {
           description: "A Python desktop app that captures your voice, translates it in real time, and sends the result to VRChat's in-game Chatbox over OSC, allowing players to talk across language barriers.",
           image: "/LiveTranslator/poster.png",
           video: "/LiveTranslator/translator-demo.mp4",
-          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "deep-translator", "python-osc", "pynput"],
+          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "python-osc", "pynput"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
@@ -148,12 +148,12 @@ const en = {
           disabled: false
         },
         {
-          title: "SFTB Enterprises Website",
+          title: "SFTB Enterprises LLC Website",
           category: "freelance",
           timeframe: "Present",
-          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive React-based interface.",
+          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive interface.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
+          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
