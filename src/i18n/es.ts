@@ -148,12 +148,12 @@ const es = {
           disabled: false
         },
         {
-          title: "Sitio web de SFTB Enterprises",
+          title: "Sitio web de SFTB Enterprises LLC",
           category: "freelance",
           timeframe: "Presente",
-          description: "Un sitio web moderno creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y los proyectos destacados a través de una interfaz basada en React responsive.",
+          description: "Un sitio web moderno creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y los proyectos destacados a través de una interfaz responsive.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
+          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
           github: "https://github.com/mika-collins",
           sourceLabel: "En Desarrollo",
           disabled: true

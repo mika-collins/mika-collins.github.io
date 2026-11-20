@@ -148,12 +148,12 @@ const en = {
           disabled: false
         },
         {
-          title: "SFTB Enterprises Website",
+          title: "SFTB Enterprises LLC Website",
           category: "freelance",
           timeframe: "Present",
-          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive React-based interface.",
+          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive interface.",
           image: "/SFTB/SFTBWebsite.png",
-          tech: ["Javascript", "React", "Vite", "HTML/CSS", "Node.js", "GitHub Actions"],
+          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
