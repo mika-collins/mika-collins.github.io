@@ -66,7 +66,7 @@ const es = {
             description: "Implementando requisitos comerciales en IBM OpenPages, solucionando problemas de producción, resolviendo defectos de UAT y apoyando lanzamientos mensuales en entornos DEV, QA y Prod."
           },
           {
-            title: "Beca de Ingeniería de Software",
+            title: "Becaria de Ingeniería de Software",
             company: "Kittelson & Associates, Inc. · Feb 2026-Mayo 2026",
             description: "Desarrollé nuevos módulos y mejoras de interfaz para la plataforma wzKIT™ de Kittelson, mejorando el análisis de seguridad de zonas de trabajo y planificación vial."
           },
@@ -125,16 +125,27 @@ const es = {
       },
       list: [
         {
+          title: "Sitio web de SFTB Enterprises LLC",
+          category: "freelance",
+          timeframe: "Presente",
+          description: "Un sitio web moderno creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y los proyectos destacados a través de una interfaz responsive.",
+          image: "/SFTB/SFTBWebsite.png",
+          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
+          github: "https://github.com/mika-collins",
+          sourceLabel: "En Desarrollo",
+          disabled: true
+        },
+        {
           title: "Traductor en Vivo para VRChat",
           category: "personal",
           timeframe: "Septiembre 2026 - Presente",
           description: "Una aplicación de escritorio en Python que captura tu voz, la traduce en tiempo real y envía el resultado al Chatbox de VRChat mediante OSC, permitiendo que los jugadores se comuniquen a pesar de las barreras del idioma.",
-          image: "/LiveTranslator/poster.png",
-          video: "/LiveTranslator/translator-demo.mp4",
+          image: "/LiveTranslator/trailer-poster.png",
+          video: "/LiveTranslator/trailer.mp4",
           tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "python-osc", "pynput"],
-          github: "https://github.com/mika-collins",
-          sourceLabel: "En Desarrollo",
-          disabled: true
+          github: "https://github.com/mika-collins/vrc-live-translator",
+          sourceLabel: "Ver Código Fuente",
+          disabled: false
         },
         {
           title: "Colaboradora de Código Abierto a Apache Grails",
@@ -146,17 +157,6 @@ const es = {
           github: "https://github.com/apache/grails-core/pulls?q=is%3Apr+author%3Amika-collins",
           sourceLabel: "Ver Contribuciones",
           disabled: false
-        },
-        {
-          title: "Sitio web de SFTB Enterprises LLC",
-          category: "freelance",
-          timeframe: "Presente",
-          description: "Un sitio web moderno creado para un negocio local de camiones de volteo con sede en Albemarle, NC. El sitio muestra los servicios de la empresa, la información de contacto y los proyectos destacados a través de una interfaz responsive.",
-          image: "/SFTB/SFTBWebsite.png",
-          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
-          github: "https://github.com/mika-collins",
-          sourceLabel: "En Desarrollo",
-          disabled: true
         },
         {
           title: "Sitio de Portafolio",

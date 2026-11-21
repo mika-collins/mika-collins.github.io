@@ -66,7 +66,7 @@ const en = {
             description: "Implementing business requirements in IBM OpenPages, troubleshooting production issues, resolving UAT defects, and supporting monthly releases across DEV, QA, and Prod environments."
           },
           {
-            title: "Software Engineering Fellowship",
+            title: "Software Engineer Intern",
             company: "Kittelson & Associates, Inc. · Feb 2026-May 2026",
             description: "Developed new modules and interface enhancements for Kittelson's wzKIT\u2122 platform, improving data-driven analysis of work zone safety and roadway planning."
           },
@@ -125,16 +125,27 @@ const en = {
       },
       list: [
         {
-          title: "VRChat Live Translator",
-          category: "personal",
-          timeframe: "September 2026 - Present",
-          description: "A Python desktop app that captures your voice, translates it in real time, and sends the result to VRChat's in-game Chatbox over OSC, allowing players to talk across language barriers.",
-          image: "/LiveTranslator/poster.png",
-          video: "/LiveTranslator/translator-demo.mp4",
-          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "python-osc", "pynput"],
+          title: "SFTB Enterprises LLC Website",
+          category: "freelance",
+          timeframe: "Present",
+          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive interface.",
+          image: "/SFTB/SFTBWebsite.png",
+          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
           github: "https://github.com/mika-collins",
           sourceLabel: "Under Development",
           disabled: true
+        },
+        {
+          title: "Live Translator for VRChat",
+          category: "personal",
+          timeframe: "September 2026 - Present",
+          description: "A Python desktop app that captures your voice, translates it in real time, and sends the result to VRChat's in-game Chatbox over OSC, allowing players to talk across language barriers.",
+          image: "/LiveTranslator/trailer-poster.png",
+          video: "/LiveTranslator/trailer.mp4",
+          tech: ["Python", "CustomTkinter", "SpeechRecognition", "PyAudio", "python-osc", "pynput"],
+          github: "https://github.com/mika-collins/vrc-live-translator",
+          sourceLabel: "View Source Code",
+          disabled: false
         },
         {
           title: "Apache Grails Open Source Contributor",
@@ -146,17 +157,6 @@ const en = {
           github: "https://github.com/apache/grails-core/pulls?q=is%3Apr+author%3Amika-collins",
           sourceLabel: "View Contributions",
           disabled: false
-        },
-        {
-          title: "SFTB Enterprises LLC Website",
-          category: "freelance",
-          timeframe: "Present",
-          description: "A modern website created for a local dumptrucking business based in Albemarle, NC. The site showcases the company's services, contact information, and featured projects through a responsive interface.",
-          image: "/SFTB/SFTBWebsite.png",
-          tech: ["TypeScript", "React", "Vite", "Tailwind CSS", "GitHub Actions"],
-          github: "https://github.com/mika-collins",
-          sourceLabel: "Under Development",
-          disabled: true
         },
         {
           title: "Portfolio Site",
